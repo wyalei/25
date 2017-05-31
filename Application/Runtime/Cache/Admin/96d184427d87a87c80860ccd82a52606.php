@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>后台管理</title>
+<title>后台管理2</title>
 <link href="/w3cschool/25/Public/Css/index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -349,7 +349,7 @@
 				<?php switch($_GET['handle']): case "insert": ?><form name="form1" method="post" action="/w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert">
 <table width="750" border="1" cellspacing="1" cellpadding="1">
   <tr>
-    <td colspan="2" align="center">数据添加</td>
+    <td colspan="2" align="center">数据添加2</td>
   </tr>
   <tr>
     <td width="178" align="right">类别选择</td>
@@ -452,7 +452,7 @@
           		<?php switch($_GET['handle']): case "insert": ?><form name="form1" method="post" action="/w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert">
 <table width="750" border="1" cellspacing="1" cellpadding="1">
   <tr>
-    <td colspan="2" align="center">数据添加</td>
+    <td colspan="2" align="center">数据添加2</td>
   </tr>
   <tr>
     <td width="178" align="right">类别选择</td>

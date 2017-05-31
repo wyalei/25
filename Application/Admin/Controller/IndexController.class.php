@@ -56,13 +56,19 @@ class IndexController extends Controller{
 				}
 			}
 		}else{
-			import("ORG.Util.Page");	//载入分页类
+			// import("ORG.Util.Page");	//载入分页类
 			$count=$com->count();		//统计总的记录数
-			$Page=new Page($count,8);	//实例化分页类，设置每页显示8条记录
+			// $Page=new Page($count,8);	//实例化分页类，设置每页显示8条记录
+			$Page=new \Think\Page($count,8);	
 			$show= $Page->show();		//输出分页超级链接
 			$list = $com->order('id')->limit($Page->firstRow.','.$Page->listRows)->select();	//执行分页查询
 			$this->assign('list',$list);	//将查询结果赋给模板变量
 			$this->assign('page',$show); 	//将获取的分页超级链接赋给模板变量
+
+			// $list = $com->select();
+			// $this->assign('list',$list);	//将查询结果赋给模板变量
+			// $show = 1;
+			// $this->assign('page',$show); 	//将获取的分页超级链接赋给模板变量
 		}
 	}
 	public function middle(){
@@ -90,9 +96,10 @@ class IndexController extends Controller{
 				}
 			}
 		}else{
-			import("ORG.Util.Page");
+			// import("ORG.Util.Page");
 			$count=$com->count();
-			$Page=new Page($count,8);
+			// $Page=new Page($count,8);
+			$Page=new \Think\Page($count,8);	
 			$show= $Page->show();
 			$list = $com->order('id')->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign('list',$list);
@@ -124,9 +131,10 @@ class IndexController extends Controller{
 				}
 			}
 		}else{
-			import("ORG.Util.Page");
+			// import("ORG.Util.Page");
 			$count=$com->count();
-			$Page=new Page($count,8);
+			// $Page=new Page($count,8);
+			$Page=new \Think\Page($count,8);	
 			$show= $Page->show();
 			$list = $com->order('id')->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign('list',$list);
@@ -158,9 +166,10 @@ class IndexController extends Controller{
 				}
 			}
 		}else{
-			import("ORG.Util.Page");
+			// import("ORG.Util.Page");
 			$count=$com->count();
-			$Page=new Page($count,8);
+			// $Page=new Page($count,8);
+			$Page=new \Think\Page($count,8);	
 			$show= $Page->show();
 			$list = $com->order('id')->limit($Page->firstRow.','.$Page->listRows)->select();
 			$this->assign('list',$list);

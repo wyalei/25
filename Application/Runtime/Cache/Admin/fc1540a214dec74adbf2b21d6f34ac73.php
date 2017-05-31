@@ -12,7 +12,7 @@
     	<td align="center"><?php echo ($hint); ?></td>
     </tr>
     <tr>	
-        <td align="center"><span class="spanT">5</span>秒后自动跳转，如未跳转，请单击<a href="<?php echo ($url); ?>">这里</a></td>
+        <td align="center"><span class="spanT">0</span>秒后自动跳转，如未跳转，请单击<a href="<?php echo ($url); ?>">这里</a></td>
   	</tr>
 </table>
 <script type="text/javascript">

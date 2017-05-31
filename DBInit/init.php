@@ -63,7 +63,22 @@
             . "primary key(id)"
             . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
-			$sql_arr = array($sql_common, $sql_elementarytype, $sql_hightype, $sql_middletype, $sql_smalltype);
+        $sql_form = "create table if not exists a_Form(" 
+          . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+          . "title varchar(255) NOT NULL,"
+          . "content varchar(255) NOT NULL,"
+          . "create_time int(11) unsigned, "
+            . "primary key(id)"
+            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+
+        $sql_hightype2 = "create table if not exists a_hightype2(" 
+            . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+                    . "englishname varchar(80), "
+                    . "chinesename varchar(80), "
+            . "primary key(id)"
+            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+
+			$sql_arr = array($sql_common, $sql_elementarytype, $sql_hightype, $sql_middletype, $sql_smalltype, $sql_form, $sql_hightype2);
 
 			foreach ($sql_arr as $sql) {
 				echo "sql: " . $sql . "<br/>";

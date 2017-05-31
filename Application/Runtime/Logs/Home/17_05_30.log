@@ -1,0 +1,42 @@
+[ 2017-05-30T22:25:52+08:00 ] ::1 /w3cschool/25/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+ERR: 1146:Table 'db_database20.think_middletype' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_middletype`
+ERR: 1146:Table 'db_database20.think_middletype' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_middletype`
+
+[ 2017-05-30T22:26:57+08:00 ] ::1 /w3cschool/25/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0004s ]
+ERR: 1054:Unknown column 'hightid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `a_middletype` WHERE ( hightid=1 ) 
+ERR: 1054:Unknown column 'hightid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `a_middletype` WHERE ( hightid=1 ) 
+
+[ 2017-05-30T22:29:23+08:00 ] ::1 /w3cschool/25/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `a_middletype` WHERE ( highid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `a_middletype` LIMIT 12,3   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Users/wangyalei/Sites/w3cschool/25/Application/Home/Controller/IndexController.class.php 第 18 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 0,7' at line 1
+ [ SQL语句 ] : SELECT * FROM `a_common` WHERE ( middleid= ) LIMIT 0,7  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 0,7' at line 1
+ [ SQL语句 ] : SELECT * FROM `a_common` WHERE ( middleid= ) LIMIT 0,7  
+
