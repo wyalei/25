@@ -1,0 +1,3126 @@
+[ 2017-06-01T07:15:53+08:00 ] 127.0.0.1 /w3cschool/25/index.php/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-06-01T07:15:57+08:00 ] 127.0.0.1 /w3cschool/25/index.php/Admin/Index/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:15:58+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+NOTIC: [8] Undefined index: type_link D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 225 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0330s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 182 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: type_link D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 40 行.
+NOTIC: [8] Undefined index: type_link D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 45 行.
+NOTIC: [8] Undefined index: type_link D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 70 行.
+NOTIC: [8] Undefined index: type_link D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 129 行.
+NOTIC: [8] Undefined index: type_link D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 202 行.
+NOTIC: [8] Undefined index: type_link D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 275 行.
+NOTIC: [8] Undefined index: type_link D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 348 行.
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 452 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:16:07+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/deletedata?type_link=data&handle=admin&link_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: delete from a_common where id in (1) [ RunTime:0.0310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:16:07+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:16:10+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 41 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:22:10+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:22:31+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/high?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: INSERT INTO `a_hightype` (`ChineseName`,`EnglishName`) VALUES ('生活服务','shenghuo') [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:22:31+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:22:42+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:23:03+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/high?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0130s ]
+SQL: INSERT INTO `a_hightype` (`ChineseName`,`EnglishName`) VALUES ('娱乐休闲','fun') [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:23:03+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:23:08+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:23:18+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/high?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+SQL: INSERT INTO `a_hightype` (`ChineseName`,`EnglishName`) VALUES ('地方网站','other') [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:23:19+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-06-01T07:23:22+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:23:38+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/high?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+SQL: INSERT INTO `a_hightype` (`ChineseName`,`EnglishName`) VALUES ('其他','other real') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:23:38+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:23:56+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 80 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:24:27+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:24:52+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/middle?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_middletype` (`ChineseName`,`EnglishName`) VALUES ('购物','shopping') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-06-01T07:24:52+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:24:55+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:25:09+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/middle?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_middletype` (`ChineseName`,`EnglishName`) VALUES ('彩票','caipiao') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:25:10+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:25:11+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:25:28+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/middle?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_middletype` (`ChineseName`,`EnglishName`) VALUES ('查询','query') [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:25:29+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:25:34+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:25:49+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/middle?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_middletype` (`ChineseName`,`EnglishName`) VALUES ('天气','whether') [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:25:49+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:25:50+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:26:00+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/middle?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_middletype` (`ChineseName`,`EnglishName`) VALUES ('股票','stock') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:26:00+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:30:13+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:30:36+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('1','0','0','购物1','hhhhhh') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:30:36+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:30:40+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:30:55+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('1','0','0','购物2','dddddd') [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:30:56+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:30:59+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:07+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('1','0','0','购物3','333333') [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:08+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:09+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:19+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('2','0','0','彩票1','dddd') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:31:19+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:31:22+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:31+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('2','0','0','彩票2','dddd') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:31+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:33+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:43+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0000s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('2','0','0','彩票3','ddddd') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:43+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:44+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:59+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('3','0','0','查询1','dddd') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:31:59+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:32:00+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:32:10+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('3','0','0','查询2','dddd') [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:32:10+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:32:13+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:32:21+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('3','0','0','查询3','ddd') [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:32:21+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:32:23+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:32:31+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('4','0','0','天气1','dddd') [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:32:32+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-06-01T07:32:33+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-06-01T07:32:41+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('4','0','0','天气2','ddddd') [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:32:42+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:32:43+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:32:53+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('4','0','0','天气3','dddd') [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:32:53+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:32:54+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:33:04+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/common?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_common` (`middleid`,`elementaryid`,`smallid`,`title`,`href`) VALUES ('5','0','0','股票1','dddd') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:33:04+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:33:05+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:34:56+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 41 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-06-01T07:35:01+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:35:10+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/high?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0120s ]
+SQL: INSERT INTO `a_hightype` (`ChineseName`,`EnglishName`) VALUES ('麻将','majiang') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:35:11+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:35:51+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.211012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.211012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:36:13+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 182 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 349 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:36:15+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex/type_link/data/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 182 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 8,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 349 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:43:22+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 80 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 130 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:43:25+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:43:28+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:43:29+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 80 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 130 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:43:31+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:44:32+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:44:34+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+NOTIC: [8] Undefined index: hightid D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:55:49+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:55:50+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T07:55:55+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 41 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:55:59+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 80 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:56:02+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:56:12+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/middle?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_middletype` (`hightid`,`ChineseName`,`EnglishName`) VALUES ('1','测试','ces') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:56:12+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T07:58:24+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:27:11+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/deletemiddle?type_link=middle&handle=admin&link_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: delete from a_middletype where id in (4) [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: delete from a_elementarytype where middleid in (4) [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+ERR: 1054:Unknown column 'elementaryid' in 'where clause'
+ [ SQL语句 ] : delete from a_smalltype where elementaryid in (4)
+ERR: 1054:Unknown column 'elementaryid' in 'where clause'
+ [ SQL语句 ] : delete from a_smalltype where elementaryid in (4)
+
+[ 2017-06-01T08:27:17+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 41 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:27:18+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:27:30+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/high?type_link=high&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: INSERT INTO `a_hightype` (`ChineseName`,`EnglishName`) VALUES ('艳丽','yanli') [ RunTime:0.0390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-06-01T08:27:31+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:27:48+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 80 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:27:50+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T08:28:00+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/middle?type_link=middle&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: INSERT INTO `a_middletype` (`hightid`,`ChineseName`,`EnglishName`) VALUES ('1','艳丽3','yanli') [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:28:01+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:28:20+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 182 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 349 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:28:56+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:28:58+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `a_smalltype`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-06-01T08:29:00+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data&handle=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T08:29:06+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_common` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 182 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_common` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_common` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 349 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:29:07+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=small
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 150 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_smalltype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_smalltype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 276 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:29:09+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=elementary
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_middletype`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 115 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_elementarytype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_elementarytype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:29:10+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 80 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-06-01T08:29:11+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=high
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 41 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_hightype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_hightype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T08:29:12+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=middle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_middletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `a_hightype` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `a_hightype`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 80 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_middletype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_middletype` ORDER BY id LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-06-01T08:29:13+08:00 ] ::1 /w3cschool/25/index.php/Admin/Index/adminIndex?type_link=small
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `a_smalltype` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `a_elementarytype` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `a_elementarytype`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Admin\Controller\IndexController.class.php 第 150 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `a_smalltype` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `a_smalltype` ORDER BY id LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: handle D:\project\sites\w3cschool\25\Application\Runtime\Cache\Admin\96d184427d87a87c80860ccd82a52606.php 第 276 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
