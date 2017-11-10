@@ -5,7 +5,7 @@ class IndexController extends Controller {
        public function index(){
         $middletype =M('middletype');           //实例化模型类
         
-        $middledata=$middletype->where('hightid=1')->select();//查询中级类别，高级类别为生活服务
+        $middledata=$middletype->where('highid=1')->select();//查询中级类别，高级类别为生活服务
         $this->assign('middledata',$middledata);                //将查询结果赋给模板变量
                         
         //$middletype=$middletype->limit('12,3')->select();       //查询中级类别
@@ -26,7 +26,7 @@ class IndexController extends Controller {
         $list=$com->select();                           //查询数据
         $this->assign('list',$list);                    //将查询结果赋给模板变量
         
-        $applieddata=$com->where('hightid=5')->select();//查询中级类别，高级类别为实用工具
+        $applieddata=$com->where('highid=5')->select();//查询中级类别，高级类别为实用工具
         $this->assign('applied',$applieddata);  
         $this->display('index');                        //指定模板页
     }

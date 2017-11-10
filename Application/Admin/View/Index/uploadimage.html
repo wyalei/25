@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/iColor.css"/>
+    <script src='__PUBLIC__/Js/jquery-1.9.1.min.js'></script>
+    <script src='__PUBLIC__/Js/iColor.js'></script>
+</head>
+<body>
+<span> 上传文件测试Demo </span>
+<form action="__URL__/upload/" method='post' enctype='multipart/form-data'>
+    <br/>
+    <input type="file" name="photo1"/>
+    <br/>
+    <input type="file" name="photo2">
+    <br/>
+    <input type="file" name="photo3">
+    <br/>
+    <hr>
+    是否开启水印<br/>
+    <input type='radio' value='1' name='statu' checked/>开
+    <input type='radio' value='2' name='statu'/>关
+    <br/>
+    选择水印位置
+    <input type='radio' value='1' name='pos' checked/>左上
+    <input type='radio' value='7' name='pos'/>左下
+    <input type='radio' value='3' name='pos'/>右上
+    <input type='radio' value='9' name='pos'/>右下
+    <input type='radio' value='5' name='pos'/>居中
+    <br>
+    文字水印内容:<br/>
+    <input type='text' size='15' name='text'/> (填写添加文字水印,图片水印请留空)
+    <br>
+    水印文字大小:
+    <input type='text' size='5' name='size'/>
+    <br>
+    请选择水印文字颜色:
+    <div style="margin: 10px;">
+        颜色拾取 : <input id='cl' name="color" type="text" hx="#ccc"/>
+    </div>
+    <script>
+        $('#cl').iColor({'x': 10, 'y': -50});
+    </script>
+    <hr>
+    是否创建缩略图
+    <input type='radio' value='1' name='thum' checked/>开
+    <input type='radio' value='2' name='thum'/>关
+    <br/>
+    高 :<input type='text' name='hejpg' size='5' value='150'/>
+    宽 :<input type='text' name='wijpg' size='5' value='150'/>
+    <hr>
+    <br/>
+
+
+    <input type='submit' value='确认上传'/>
+
+</form>
+<div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr>
+    <volist name='list' id='vo'>
+        <span><{$vo['id']}></span>
+        <img style='margin:10px;border:1px solid black;' src="__ROOT__/Uploads/<{$vo['image']}>"/>
+        <notempty name='vo["simage"]'>
+            <img style='margin:10px;border:1px solid black;' src="__ROOT__/Uploads/<{$vo['simage']}>"/>
+        </notempty>
+        <hr>
+    </volist>
+</div>
+</body>
+</html>

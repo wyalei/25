@@ -1,0 +1,42 @@
+.login-container{
+    border: 1px solid #aaaaaa;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.login-container .title{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.login-container .username{
+    margin: 0 auto;
+    height: 30px;
+    border-radius: 2px;
+    display: block;
+    width: 180px;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.login-container .pwd{
+    margin: 0 auto;
+    height: 30px;
+    width: 180px;
+    display: block;
+    border-radius: 2px;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.login-container .submit{
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    height: 40px;
+    width: 185px;
+    border-radius: 2px;
+}

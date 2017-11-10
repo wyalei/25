@@ -12,7 +12,7 @@
 		$dbms="mysql";
 		$dbName ='db_database20';
 		$user='root';
-		$pwd='mymac8';
+		$pwd='ubuntu912';
 		$host='127.0.0.1:3306';
 		$dsn="$dbms:host=$host;dbname=$dbName";
 
@@ -21,64 +21,70 @@
 			$pdo = new PDO($dsn,$user,$pwd);
 			echo "pdo connect success<br/>";
 
-    		$sql_common = "create table if not exists a_common(" 
+    		$sql_style = "create table if not exists a_style("
     				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
-    				. "highid int(4), "
-                    . "middleid int(4), "
-                    . "elementaryid int(4), "
-                    . "smallid int(4), "
-                    . "title varchar(100), "
-                    . "href text, "
+    				. "show_name varchar(100) not null, "
+                    . "modify_time int(4), "
+                    . "show_order int(4), "
     				. "primary key(id)"
     				. ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
-    		$sql_elementarytype = "create table if not exists a_elementarytype(" 
-    				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
-    				. "middleid int(4), "
-    				. "EnglishName varchar(80), "
-                    . "ChineseName varchar(80), "
-    				. "primary key(id)"
-    				. ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+            $sql_space = "create table if not exists a_space("
+                . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+                . "show_name varchar(100) not null, "
+                . "modify_time int(4), "
+                . "show_order int(4), "
+                . "primary key(id)"
+                . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
-    		$sql_hightype = "create table if not exists a_hightype(" 
-    				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
-                    . "EnglishName varchar(80), "
-                    . "ChineseName varchar(80), "
-    				. "primary key(id)"
-    				. ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
-    		$sql_middletype = "create table if not exists a_middletype(" 
-    				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
-                    . "highid int(4), "
-                    . "EnglishName varchar(80), "
-                    . "ChineseName varchar(80), "
-    				. "primary key(id)"
-    				. ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+//    		$sql_elementarytype = "create table if not exists a_elementarytype("
+//    				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+//    				. "middleid int(4), "
+//    				. "EnglishName varchar(80), "
+//                    . "ChineseName varchar(80), "
+//    				. "primary key(id)"
+//    				. ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+//
+//    		$sql_hightype = "create table if not exists a_hightype("
+//    				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+//                    . "EnglishName varchar(80), "
+//                    . "ChineseName varchar(80), "
+//    				. "primary key(id)"
+//    				. ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+//
+//    		$sql_middletype = "create table if not exists a_middletype("
+//    				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+//                    . "highid int(4), "
+//                    . "EnglishName varchar(80), "
+//                    . "ChineseName varchar(80), "
+//    				. "primary key(id)"
+//    				. ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+//
+//        $sql_smalltype = "create table if not exists a_smalltype("
+//            . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+//                    . "smallid int(4), "
+//                    . "EnglishName varchar(80), "
+//                    . "ChineseName varchar(80), "
+//            . "primary key(id)"
+//            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+//
+//        $sql_form = "create table if not exists a_Form("
+//          . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+//          . "title varchar(255) NOT NULL,"
+//          . "content varchar(255) NOT NULL,"
+//          . "create_time int(11) unsigned, "
+//            . "primary key(id)"
+//            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+//
+//        $sql_hightype2 = "create table if not exists a_hightype2("
+//            . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+//                    . "englishname varchar(80), "
+//                    . "chinesename varchar(80), "
+//            . "primary key(id)"
+//            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
-        $sql_smalltype = "create table if not exists a_smalltype(" 
-            . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
-                    . "smallid int(4), "
-                    . "EnglishName varchar(80), "
-                    . "ChineseName varchar(80), "
-            . "primary key(id)"
-            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
-
-        $sql_form = "create table if not exists a_Form(" 
-          . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
-          . "title varchar(255) NOT NULL,"
-          . "content varchar(255) NOT NULL,"
-          . "create_time int(11) unsigned, "
-            . "primary key(id)"
-            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
-
-        $sql_hightype2 = "create table if not exists a_hightype2(" 
-            . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
-                    . "englishname varchar(80), "
-                    . "chinesename varchar(80), "
-            . "primary key(id)"
-            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
-
-			$sql_arr = array($sql_common, $sql_elementarytype, $sql_hightype, $sql_middletype, $sql_smalltype, $sql_form, $sql_hightype2);
+			$sql_arr = array($sql_style, $sql_space);
 
 			foreach ($sql_arr as $sql) {
 				echo "sql: " . $sql . "<br/>";

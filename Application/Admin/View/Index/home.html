@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>馨家后台管理系统</title>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/Css/home.css">
+
+    <script language="JavaScript">
+        function deleteStyle(type, id, name) {
+            if(confirm("你确定要删除" + name +"吗？")){
+                location.href = "__URL__/home?type_link=" + type + "&handle=delete&id=" + id;
+            }
+        }
+
+        function modifyStyleName(type, id, name) {
+            var new_name = prompt("请输入新名字", name);
+            if(new_name != name){
+                location.href = "__URL__/home?type_link=" + type + "&handle=modify&id=" + id + "&name=" + new_name;
+            }
+        }
+
+        function modifyStyleOrder(type, id, order) {
+            var new_order = prompt("请输入新顺序", order);
+            if(new_order != order){
+                location.href = "__URL__/home?type_link=" + type +"&handle=modify&id=" + id + "&order=" + new_order;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">馨家后台管理系统</a>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item username">
+                    <a href="#">向大人</a>
+                </li>
+                <li class="nav-item home">
+                    <a href="#">网站首页</a>
+                </li>
+                <li class="nav-item system-home">
+                    <a href="#">系统首页</a>
+                </li>
+                <li class="nav-item category-manage">
+                    <a href="#">分类管理</a>
+                    <ul class="sub-nav">
+                        <li class="style">
+                            <a href="#">风格管理</a>
+                        </li>
+                        <li class="space">
+                            <a href="#">空间管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item setting">
+                    <a href="#">设置</a>
+                </li>
+                <li class="nav-item quit">
+                    <a href="#">退出</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="left-slide">
+        <div class="type-manage">分类管理</div>
+        <ul class="type-manage-list">
+            <li class="style">
+                <a href="__URL__/home?type_link=style&handle=show">风格</a>
+            </li>
+            <li class="space">
+                <a href="__URL__/home?type_link=space&handle=show">空间</a>
+            </li>
+            <li class="all">
+                <a href="#">全部</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <?php
+            if(($_GET['type_link'])=="style"){
+        ?>
+            <include file="contentStyle"/>
+        <?php
+            }else if(($_GET['type_link'])=="space"){
+        ?>
+            <include file="contentStyle"/>
+        <?php }else{ ?>
+            <include file="contentSpace"/>
+        <?php }?>
+    </div>
+</body>
+</html>

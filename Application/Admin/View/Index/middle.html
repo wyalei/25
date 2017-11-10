@@ -7,7 +7,7 @@
   <tr>
     <td align="right">高级类别</td>
     <td>
-    <select name="hightid" id="hightid">
+    <select name="highid" id="highid">
       <option selected="selected">请选择</option>
    <foreach name="highdata" item="resulthigh" >
 		<option value="{$resulthigh.id}">{$resulthigh.ChineseName}</option>
@@ -47,7 +47,7 @@
           <td>{$result.EnglishName}</td>
           <td>
 	<foreach name="highdata" item="resulthigh" >
-    	<eq name="resulthigh.id" value="$result.hightid">
+    	<eq name="resulthigh.id" value="$result.highid">
        {$resulthigh.ChineseName}  
         </eq>
    	</foreach></td>
@@ -75,7 +75,7 @@
           <td>{$result.EnglishName}</td>
           <td>
 	<foreach name="highdata" item="resulthigh" >
-    	<eq name="resulthigh.id" value="$result.hightid">
+    	<eq name="resulthigh.id" value="$result.highid">
        {$resulthigh.ChineseName}  
         </eq>
    	</foreach></td>
