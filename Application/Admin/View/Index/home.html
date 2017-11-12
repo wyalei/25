@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>馨家后台管理系统</title>
     <link rel="stylesheet" type="text/css" href="__ROOT__/Public/Css/home.css">
-
     <script language="JavaScript">
         function deleteStyle(type, id, name) {
             if(confirm("你确定要删除" + name +"吗？")){
@@ -25,6 +24,71 @@
                 location.href = "__URL__/home?type_link=" + type +"&handle=modify&id=" + id + "&order=" + new_order;
             }
         }
+
+        //判断浏览器是否支持FileReader接口
+        if (typeof FileReader == 'undefined') {
+            document.getElementById("xmTanDiv").InnerHTML = "<h1>当前浏览器不支持FileReader接口</h1>";
+            //使选择控件不可操作
+            document.getElementById("xdaTanFileImg").setAttribute("disabled", "disabled");
+            document.getElementById("uploadImage").setAttribute("disabled", "disabled");
+        }
+
+        //选择图片，马上预览
+        function xmTanUploadImg(obj) {
+            for (var i = 0; i < obj.files.length; i++) {
+                if (!obj['value'].match(/.jpg|.gif|.png|.bmp/i)) {　　//判断上传文件格式
+                    return alert("上传的图片格式不正确，请重新选择");
+                }
+                var reader = new FileReader();
+                reader.readAsDataURL(obj.files[i]);
+                reader.onload = function (e) {
+                    result = '<div id="result"><img class="preview-image" src="' + this.result + '" alt=""/></div>';
+                    div = document.createElement('div');
+                    div.innerHTML = result;
+                    document.getElementById('preview-list').appendChild(div);
+                }
+            }
+        }
+
+        function uploadImage(obj) {
+            for (var i = 0; i < obj.files.length; i++) {
+                if (!obj['value'].match(/.jpg|.gif|.png|.bmp/i)) {　　//判断上传文件格式
+                    return alert("上传的图片格式不正确，请重新选择");
+                }
+                var reader = new FileReader();
+                reader.readAsDataURL(obj.files[i]);
+                reader.onload = function (e) {
+                    result = '<img class="image-detail" src="' + this.result + '" alt=""/>'
+                        + '<input type="button" class="delete" onclick="deleteImage(this)" value="删除" style="display: none"/>';
+                    div = document.createElement('div');
+                    div.setAttribute('class', 'image-edit');
+                    div.innerHTML = result;
+                    document.getElementById('uploaded-image-list').appendChild(div);
+                }
+            }
+        }
+
+        function deleteImage(obj) {
+            var index = obj.getAttribute("index");
+            if(index != null && index != "" && index != undefined){
+                indexEle = document.getElementById('deleteImageIndex');
+                if(indexEle.value == "" || indexEle.value == null || indexEle.value == undefined){
+                    resultValue = indexEle.value + index;
+                }else{
+                    resultValue = indexEle.value + "," + index;
+                }
+                indexEle.value = resultValue;
+            }
+            parent = obj.parentNode;
+            document.getElementById('uploaded-image-list').removeChild(parent);
+        }
+
+        function clickDeleteImage(id, type, name) {
+            if(confirm("你确定要删除 " + name +" 吗？")){
+                location.href = "__URL__/home?type_link=" + type + "&handle=delete&id=" + id;
+            }
+        }
+
     </script>
 </head>
 <body>
@@ -48,10 +112,10 @@
                     <a href="#">分类管理</a>
                     <ul class="sub-nav">
                         <li class="style">
-                            <a href="#">风格管理</a>
+                            <a href="__URL__/home?type_link=style&handle=show">风格管理</a>
                         </li>
                         <li class="space">
-                            <a href="#">空间管理</a>
+                            <a href="__URL__/home?type_link=space&handle=show">空间管理</a>
                         </li>
                     </ul>
                 </li>
@@ -69,13 +133,13 @@
         <div class="type-manage">分类管理</div>
         <ul class="type-manage-list">
             <li class="style">
-                <a href="__URL__/home?type_link=style&handle=show">风格</a>
+                <a href="__URL__/home?type_link=imagelist-style&handle=show">风格</a>
             </li>
             <li class="space">
-                <a href="__URL__/home?type_link=space&handle=show">空间</a>
+                <a href="__URL__/home?type_link=imagelist-space&handle=show">空间</a>
             </li>
             <li class="all">
-                <a href="#">全部</a>
+                <a href="__URL__/home?type_link=imagelist-all&handle=show">全部</a>
             </li>
         </ul>
     </div>
@@ -84,13 +148,24 @@
         <?php
             if(($_GET['type_link'])=="style"){
         ?>
-            <include file="contentStyle"/>
+            <include file="contentType"/>
         <?php
             }else if(($_GET['type_link'])=="space"){
         ?>
-            <include file="contentStyle"/>
+            <include file="contentType"/>
+        <?php
+            }else if(($_GET['type_link'])=="imagelist-style"){
+        ?>
+            <include file="contentImageList"/>
+        <?php
+            }else if(($_GET['type_link'])=="imagelist-space"){
+        ?>
+            <include file="contentImageList"/>
+        <?php
+            }else if(($_GET['type_link'])=="imagelist-all"){
+        ?>
+            <include file="contentImageList"/>
         <?php }else{ ?>
-            <include file="contentSpace"/>
         <?php }?>
     </div>
 </body>

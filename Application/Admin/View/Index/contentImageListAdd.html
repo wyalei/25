@@ -1,0 +1,72 @@
+<div class="content-imagelist-style-add">
+    <p class="title">
+        <?php if($_GET['type_link'] == 'imagelist-style'){ ?>
+        风格
+        <?php }else if($_GET['type_link'] == 'imagelist-space'){ ?>
+        空间
+        <?php }?>
+    </p>
+
+    <?php
+                $type = $_GET['type_link'];
+            ?>
+
+    <?php
+                if($_GET['type_link'] == 'imagelist-style'){
+                    $formAction = "__URL__/home?type_link=imagelist-style&action=add";
+                }else if($_GET['type_link'] == 'imagelist-space'){
+                    $formAction = "__URL__/home?type_link=imagelist-space&action=add";
+                }
+            ?>
+
+    <form action="<?=$formAction?>" method="post" enctype="multipart/form-data">
+        <div>
+            <p class="name-container">图片名称:<input type="text" name="name" value=""/></p>
+            <p class="style-container">
+                风格:
+                <select name="style">
+                    <foreach name="styleList" item="item">
+                        <option value="{$item.id}">{$item.show_name}</option>
+                    </foreach>
+                </select>
+            </p>
+            <p class="space-container">
+                空间:
+                <select name="space">
+                    <option value="-1">无</option>
+                    <foreach name="spaceList" item="item">
+                        <option value="{$item.id}">{$item.show_name}</option>
+                    </foreach>
+                </select>
+            </p>
+            <p class="space-container">
+                热度:
+                <select class="hot" name="hot">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </p>
+            <p class="showHide-container">
+                是否显示:
+                <select class="showHide" name="showHide">
+                    <option value="1">显示</option>
+                    <option value="0">隐藏</option>
+                </select>
+            </p>
+            <div class="fileList" id="fileList">
+                <p class="title">添加图片:<input type="file" name="image[]" id="xdaTanFileImg" multiple onchange="xmTanUploadImg(this)"/></p>
+                <div class="preview-list" id="preview-list"></div>
+            </div>
+
+            <input type="submit" name="submit" class="submit" value="提交"/>
+        </div>
+    </form>
+</div>

@@ -23,7 +23,7 @@
 
     		$sql_style = "create table if not exists a_style("
     				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
-    				. "show_name varchar(100) not null, "
+    				. "show_name varchar(100) not null unique, "
                     . "modify_time int(4), "
                     . "show_order int(4), "
     				. "primary key(id)"
@@ -31,12 +31,23 @@
 
             $sql_space = "create table if not exists a_space("
                 . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
-                . "show_name varchar(100) not null, "
+                . "show_name varchar(100) not null unique, "
                 . "modify_time int(4), "
                 . "show_order int(4), "
                 . "primary key(id)"
                 . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
+            $sql_image_list = "create table if not exists a_image_list("
+                . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+                . "name varchar(100) not null unique, "
+                . "style_type int(4), "
+                . "space_type int(4), "
+                . "hot int(4), "
+                . "modify_time int(4), "
+                . "showHide int(1), "
+                . "image_list varchar(1024) NOT NULL,"
+                . "primary key(id)"
+                . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
 //    		$sql_elementarytype = "create table if not exists a_elementarytype("
 //    				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
@@ -84,7 +95,7 @@
 //            . "primary key(id)"
 //            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
-			$sql_arr = array($sql_style, $sql_space);
+			$sql_arr = array($sql_style, $sql_space, $sql_image_list);
 
 			foreach ($sql_arr as $sql) {
 				echo "sql: " . $sql . "<br/>";

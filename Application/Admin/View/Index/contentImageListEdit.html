@@ -1,0 +1,102 @@
+<div class="content-imagelist-edit">
+    <p class="title">
+        <?php if($_GET['type_link'] == 'imagelist-style'){ ?>
+        风格->编辑
+        <?php }else if($_GET['type_link'] == 'imagelist-space'){ ?>
+        空间->编辑
+        <?php }?>
+    </p>
+
+    <?php
+                $type = $_GET['type_link'];
+            ?>
+
+    <?php
+                if($_GET['type_link'] == 'imagelist-style'){
+                    $formBase = "__URL__/home?type_link=imagelist-style";
+                }else if($_GET['type_link'] == 'imagelist-space'){
+                    $formBase = "__URL__/home?type_link=imagelist-space";
+                }
+                $formAction = $formBase . "&action=edit";
+            ?>
+
+    <form action="<?=$formAction?>" method="post" enctype="multipart/form-data">
+        <div>
+            <input type="hidden" name="id" value="{$dataItem.id}"/>
+            <p class="name-container">图片名称:<input type="text" name="name" value="{$dataItem.name}"/></p>
+            <p class="style-container">
+                风格2:
+                <select name="style" >
+                    <foreach name="styleList" item="item">
+                        <?php
+                            if($item['id'] == $dataItem['style_type']){
+                        ?>
+                            <option value="{$item.id}" selected="selected">{$item.show_name}</option>
+                        <?php }else{
+                        ?>
+                            <option value="{$item.id}">{$item.show_name}</option>
+                        <?php } ?>
+                    </foreach>
+                </select>
+            </p>
+            <p class="space-container">
+                空间:
+                <select name="space">
+                    <option value="-1">无</option>
+                    <foreach name="spaceList" item="item">
+                        <?php if($item['id'] == $dataItem['space_type']){ ?>
+                            <option value="{$item.id}" selected="selected">{$item.show_name}</option>
+                        <?php }else{ ?>
+                            <option value="{$item.id}">{$item.show_name}</option>
+                        <?php } ?>
+                    </foreach>
+                </select>
+            </p>
+            <p class="hot-container">
+                <?php $hotCount = 10; ?>
+                热度:
+                <select class="hot" name="hot">
+                    <?php
+                        for($i = 0; $i < $hotCount; $i++){
+                            if($i == $dataItem['hot']){
+                    ?>
+                        <option value="<?php echo($i);?>" selected="selected"><?php echo($i);?></option>
+                    <?php }else{?>
+                        <option value="<?php echo($i);?>"><?php echo($i);?></option>
+                    <?php   }
+                        }?>
+                </select>
+            </p>
+            <div class="fileList" id="fileList">
+                <p class="title">添加图片:<input type="file" name="image[]" id="uploadImageId" multiple onchange="uploadImage(this)"/></p>
+
+                <div class="uploaded-image-list" id="uploaded-image-list">
+                    <?php
+                        $imageJson = $dataItem['image_list'];
+                        $imageArr = json_decode($imageJson);
+                        $imageUrlBase = "http://localhost/newhome/Uploads/";
+                        $actionDelete = $formBase . "&action=delete";
+                    ?>
+                    <input type="hidden" name="deleteImageIndex" id="deleteImageIndex" value=""/>
+
+
+                    <p>已经存在的图片</p>
+                    <?php
+                        $size = sizeof($imageArr);
+                        for($i = 0; $i < $size; $i++){
+                            $item = $imageArr[$i];
+                    ?>
+                        <div class="image-edit">
+                            <img class="image-detail" src="<?php echo($imageUrlBase);?>{$item}"/>
+                            <input type="button" class="delete" onclick="deleteImage(this)" value="删除" index="<?=$i?>"/>
+                        </div>
+                    <?php
+                        }
+                    ?>
+                </div>
+            </div>
+
+            <input type="submit" name="submit" class="submit" value="提交"/>
+        </div>
+    </form>
+</div>

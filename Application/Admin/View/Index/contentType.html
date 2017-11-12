@@ -1,4 +1,4 @@
-<div class="content-style">
+<div class="content-type">
     <p class="title">
         <?php if($_GET['type_link'] == 'style'){ ?>
         风格
@@ -15,8 +15,8 @@
         <tr>
             <td>id</td>
             <td>名字</td>
-            <td>修改时间</td>
             <td>优先级</td>
+            <td>修改时间</td>
             <td>编辑</td>
             <td>删除</td>
         </tr>
@@ -24,8 +24,8 @@
             <tr>
                 <td>{$result.id}</td>
                 <td>{$result.show_name}</td>
-                <td>{$result.modify_time|date='Y-m-d',###}</td>
                 <td>{$result.show_order}</td>
+                <td>{$result.modify_time|date='Y-m-d',###}</td>
                 <td>
                     <input type="submit" name="submit" value="名字" onclick="modifyStyleName('<?=$type?>', '{$result.id}', '{$result.show_name}')">
                     <input type="submit" name="submit" value="优先级" onclick="modifyStyleOrder('<?=$type?>', '{$result.id}', '{$result.show_order}')">
@@ -44,7 +44,7 @@
     ?>
     <form method="post" action="<?=$formAction?>">
         <div>
-            <input type="text" name="name" placeholder="输入分类"/>
+            <input type="text" name="name" class="inputType" placeholder="输入分类"/>
             <select class="order" name="order">
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -57,7 +57,7 @@
                 <option value="8">8</option>
                 <option value="9">9</option>
             </select>
-            <input type="submit" name="submit" value="新增"/>
+            <input type="submit" name="submit" class="submitType" value="添加"/>
         </div>
     </form>
 

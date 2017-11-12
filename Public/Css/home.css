@@ -120,23 +120,191 @@ ul li{
     /*background-color: #abcdef;*/
 }
 
-.content .title{
+.content .content-type .title{
     font-size: 16px;
 }
 
-.content table{
+.content .content-type table{
     border: 1px solid #aaaaaa;
-    min-height: 25px;
-    line-height: 25px;
+    min-height: 40px;
+    line-height: 40px;
 }
 
-.content-style form .order{
+.content .content-type form .order{
     width: 50px;
 }
 
-.content table tr td{
+.content .content-type table tr td{
     font-size: 16px;
     /*border-color: #aaaaaa;*/
     border: 1px solid #aaaaaa;
     text-align: center;
 }
+
+.content .content-type form{
+    margin-top: 20px;
+}
+
+
+.content .content-type form .inputType{
+    height: 30px;
+}
+
+.content .content-type .order{
+    height: 35px;
+    margin-left: 5px;
+}
+
+.content .content-type form .submitType{
+    height: 35px;
+    margin-left: 5px;
+}
+
+
+.content-imagelist-style-add{
+    /*background-color: #abcdef;*/
+    width: 400px;
+    /*height: 600px;*/
+}
+
+
+.content .content-imagelist-style-add form p {
+    margin-top: 10px;
+    display: block;
+}
+
+.content .content-imagelist-style-add .preview-list{
+    width: 1024px;
+    margin-top: 10px;
+}
+
+
+img.preview-image{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 10px;
+}
+
+.content .content-imagelist-style-add form .submit {
+    margin-top: 10px;
+}
+
+
+.content .content-imagelist-style-show{
+    width: 1024px;
+    /*background-color: #abcdef;*/
+}
+
+.content .content-imagelist-style-show .top-bar{
+    width: 1024px;
+}
+
+.content .content-imagelist-style-show .top-bar p{
+    float: left;
+}
+
+.content .content-imagelist-style-show .top-bar a{
+    float: right;
+}
+
+table{
+    border: 1px solid #aaaaaa;
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+    /*background-color: #2e6d4a;*/
+}
+
+table tr td{
+    font-size: 16px;
+    /*border-color: #aaaaaa;*/
+    border: 1px solid #aaaaaa;
+    text-align: center;
+    /*background-color: #8ab78a;*/
+}
+
+.content .content-imagelist-style-detail{
+    width: 1024px;
+    /*background-color: #abcdef;*/
+}
+
+.content .content-imagelist-style-detail .album-imagelist .image-detail{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.content .content-imagelist-edit form .name-container{
+    float: left;
+    margin-left: 0px;
+}
+
+.content .content-imagelist-edit form .style-container{
+    float: left;
+    margin-left: 20px;
+}
+
+.content .content-imagelist-edit form .space-container{
+    float: left;
+    margin-left: 20px;
+}
+
+.content .content-imagelist-edit form .hot-container{
+    float: left;
+    margin-left: 20px;
+}
+
+
+.content .content-imagelist-edit{
+    width: 1100px;
+    float: left;
+}
+
+.content .content-imagelist-edit .fileList{
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.content .content-imagelist-edit .fileList .preview-list{
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.content .content-imagelist-edit .uploaded-image-list{
+    margin-top: 30px;
+}
+
+
+.content .content-imagelist-edit .uploaded-image-list .title{
+    float: left;
+    display: block;
+}
+
+.content .content-imagelist-edit .uploaded-image-list .image-edit{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.content .content-imagelist-edit .uploaded-image-list .image-edit .image-detail{
+    width: 300px;
+    height: 300px;
+}
+
+.content .content-imagelist-edit .uploaded-image-list .image-edit .delete{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.content .content-imagelist-edit .submit{
+    float: left;
+    display: block;
+}
+
+

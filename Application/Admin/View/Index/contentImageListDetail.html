@@ -1,0 +1,36 @@
+<div class="content-imagelist-style-detail">
+
+    <table width="1024px" border="0" cellspacing="0" cellpadding="0" >
+        <tr>
+            <td>id</td>
+            <td>名字</td>
+            <td>风格</td>
+            <td>空间</td>
+            <!--<td>图片地址</td>-->
+            <td>热度</td>
+            <td>修改时间</td>
+        </tr>
+        <tr>
+            <td>{$item.id}</td>
+            <td>{$item.name}</td>
+            <td>{$item.style_name}</td>
+            <td>{$item.space_name}</td>
+            <!--<td>{$result.image_list}</td>-->
+            <td>{$item.hot}</td>
+            <td>{$item.modify_time|date='Y-m-d h:m:s',###}</td>
+        </tr>
+    </table>
+
+    <div class="album-imagelist">
+        <?php
+            $imageJson = $item['image_list'];
+            $imageArr = json_decode($imageJson);
+            $imageUrlBase = "http://localhost/newhome/Uploads/";
+        ?>
+        <foreach name="imageArr" item="item">
+            <img class="image-detail" src="<?php echo($imageUrlBase);?>{$item}"/>
+        </foreach>
+    </div>
+
+
+</div>

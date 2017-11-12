@@ -1,6 +1,8 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
+use Think\Upload;
+
 session_start();
 class IndexController extends Controller{
 
@@ -20,10 +22,196 @@ class IndexController extends Controller{
             case 'space':
                 IndexController::handleStyle($_GET['type_link']);
                 break;
+            case 'imagelist-style':
+                IndexController::handleImageList($_GET['type_link']);
+                break;
+            case 'imagelist-space':
+                IndexController::handleImageList($_GET['type_link']);
+                break;
+            case 'imagelist-all':
+                IndexController::handleImageList($_GET['type_link']);
+                break;
         }
 
-
         $this->display();
+    }
+
+    public function uploadImageList(){
+        $upload = new \Think\Upload();
+        $upload->maxSize = 1024*1024;
+        $upload->allowExts = array('jpg','png','jpeg');
+        $upload->savePath = "Public/thumb";
+        $upload->replace = true;
+//        $upload->saveName = array('date', 'y-m-d');
+        $info = $upload->upload();
+//        if(!$info){
+//            $this->error($upload->getErrorMsg());
+//        }
+
+        return $info;
+    }
+
+    public function handleImageList($type){
+        $dbname = "image_list";
+        $full_dbname = "a_" . $dbname;
+        $com = M($dbname);
+        if($_GET['action']=='add'){
+            $info = IndexController::uploadImageList();
+            if($info){
+                $data['name'] = $_POST['name'];
+                $data['style_type']= $_POST['style'];
+                $data['space_type'] = $_POST['space'];
+                $data['hot'] = $_POST['hot'];
+                $data['showHide'] = $_POST['showHide'];
+                $data['modify_time'] = NOW_TIME;
+
+                $pathArr = array();
+                foreach ($info as $v){
+                    $path = $v['savepath'].$v['savename'];
+                    $pathArr[] = $path;
+                }
+
+                $pathJson = json_encode($pathArr);
+                $data['image_list'] = $pathJson;
+                $data = $com->data($data)->add();
+                if($data!=false){
+                    IndexController::showImageList($type,"数据添加成功");
+
+                }else{
+                    IndexController::showImageList($type,"添加失败");
+                }
+            }
+
+        }else if($_GET['action']=='edit'){
+            $id = $_POST['id'];
+            $data['name'] = $_POST['name'];
+            $data['style_type']= $_POST['style'];
+            $data['space_type'] = $_POST['space'];
+            $data['hot'] = $_POST['hot'];
+            $data['modify_time'] = NOW_TIME;
+            $deleteStr = $_POST['deleteImageIndex'];
+
+            $list = $com->where('id=' . $id)->select();
+            $imageArrJson = $list[0]['image_list'];
+            $imageArr = json_decode($imageArrJson);
+            $imageResultArr = array();
+
+            if(!IndexController::isDataEmpty($deleteStr)){
+                $deleteArr = explode(",", $deleteStr);
+                $size = sizeof($imageArr);
+                for($i = 0; $i < $size; $i++){
+                    if(!in_array($i, $deleteArr)){
+                        $imageResultArr[] = $imageArr[$i];
+                    }
+                }
+            }else{
+                $imageResultArr = $imageArr;
+            }
+
+            $info = IndexController::uploadImageList();
+            if($info){
+                foreach ($info as $v){
+                    $imageResultArr[] = $v['savepath'].$v['savename'];
+                }
+            }
+
+            $data['image_list'] = json_encode($imageResultArr);
+            $data = $com->where('id=' . $id)->save($data);
+            if($data!=false){
+                IndexController::showImageList($type,"数据更新成功");
+            }else{
+                IndexController::showImageList($type,"添加失败");
+            }
+        }else if($_GET['handle'] == 'show'){
+            if($type == 'imagelist-style'){
+                $list = $com->where('space_type = -1')->select();
+            }else if($type == 'imagelist-space'){
+                $list = $com->where('space_type <> -1')->select();
+            }else{
+                $list = $com->select();
+            }
+
+            $list = IndexController::addImageStyleSpaceName($list);
+            $this->assign('list', $list);
+
+        }else if($_GET['handle'] == 'showDetail'){
+            $id = $_GET['id'];
+            $list = $com->where('id=' . $id)->select();
+            $list = IndexController::addImageStyleSpaceName($list);
+            $this->assign('item', $list[0]);
+        }else if($_GET['handle'] == 'delete'){
+            $id = $_GET['id'];
+            $result = $com->execute("delete from " . $full_dbname ." where id = " . $id);
+            if($result){
+                IndexController::showStyle($type,"数据删除成功");
+            }else{
+                IndexController::showStyle($type,"数据删除失败");
+            }
+        }else if($_GET['handle'] == 'showHide'){
+            $id = $_GET['id'];
+            $data['showHide'] = $_GET['show'];
+            $data = $com->where('id=' . $id)->save($data);
+
+            if($data!=false){
+                IndexController::showImageList($type,"数据更新成功");
+            }else{
+                IndexController::showImageList($type,"添加失败");
+            }
+        }else if($_GET['handle'] == 'add'){
+            IndexController::assignStyleSpaceList();
+        }else if($_GET['handle'] == 'edit'){
+            $id = $_GET['id'];
+            $list = $com->where('id=' . $id)->select();
+            $list = IndexController::addImageStyleSpaceName($list);
+            IndexController::assignStyleSpaceList();
+            $this->assign('dataItem', $list[0]);
+        }
+    }
+
+    public function isDataEmpty($str){
+        if($str == "" || $str == null || $str == undefined){
+            return true;
+        }
+        return false;
+    }
+
+    public function assignStyleSpaceList(){
+        $styleDb = M("style");
+        $spaceDb = M("space");
+        $styleList = $styleDb->select();
+        $spaceList = $spaceDb->select();
+        $this->assign("styleList", $styleList);
+        $this->assign("spaceList", $spaceList);
+    }
+
+    public function addImageStyleSpaceName($list){
+        $styleDb = M("style");
+        $spaceDb = M("space");
+
+        $styleList = $styleDb->select();
+        $spaceList = $spaceDb->select();
+
+        $styleMap = array();
+        $spaceMap = array();
+
+        foreach ($styleList as $item){
+            $styleMap[strval($item['id'])] = $item['show_name'];
+        }
+
+        foreach ($spaceList as $item){
+            $spaceMap[strval($item['id'])] = $item['show_name'];
+        }
+        $spaceMap['-1'] = '无';
+        $size = sizeof($list);
+        for($i = 0; $i < $size; $i++){
+            $item = $list[$i];
+            $item['style_name'] = $styleMap[strval($item['style_type'])];
+            $item['space_name'] = $spaceMap[strval($item['space_type'])];
+
+            $list[$i] = $item;
+        }
+
+        return $list;
     }
 
     public function handleStyle($type){
@@ -75,6 +263,12 @@ class IndexController extends Controller{
                 }
             }
         }
+    }
+
+    public function showImageList($type, $msg){
+        $this->assign('hint',$msg);
+        $this->assign('url','home?type_link=' .$type. '&handle=show');
+        $this->display('information');
     }
 
     public function showStyle($type, $msg){
@@ -495,9 +689,9 @@ class IndexController extends Controller{
         // 是否使用子目录保存上传文件
         $upload->autoSub = true;
         // 采用date函数生成命名规则 传入Y-m-d参数
-        //$upload->saveName = array('date','Y-m-d');
+        $upload->saveName = array('date','Y-m-d');
         //如果有多个参数需要传入的话 可以使用数组
-        //$upload->saveName = array('myFun',array('__FILE__','val1','val2'));
+        $upload->saveName = array('myFun',array('__FILE__','val1','val2'));
 
         $info = $upload->upload();
         if(!$info) {// 上传错误提示错误信息

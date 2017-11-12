@@ -1,0 +1,80 @@
+<div class="content-imagelist-style-show">
+    <?php
+        $typeLink = $_GET['type_link'];
+    ?>
+    <div class="top-bar">
+        <p class="title">
+            <?php if($typeLink == 'imagelist-style'){ ?>
+            风格
+            <?php }else if($typeLink == 'imagelist-space'){ ?>
+            空间
+            <?php }else if($typeLink == 'imagelist-all'){ ?>
+            全部
+            <?php }?>
+        </p>
+
+        <?php
+                if($typeLink == 'imagelist-style'){
+                    $formAction = "__URL__/home?type_link=imagelist-style&handle=add";
+                }else if($typeLink == 'imagelist-space'){
+                    $formAction = "__URL__/home?type_link=imagelist-space&handle=add";
+                }else{
+                    $formAction = "__URL__/home?type_link=imagelist-all&handle=add";
+                }
+            ?>
+        <a href="<?=$formAction?>">新增图片</a>
+    </div>
+
+    <table width="1024px" border="0" cellspacing="0" cellpadding="0" >
+        <tr>
+            <td>id</td>
+            <td>名字</td>
+            <td>风格</td>
+            <td>空间</td>
+            <!--<td>图片地址</td>-->
+            <td>热度</td>
+            <td>修改时间</td>
+            <td>操作管理</td>
+        </tr>
+        <?php
+                if($typeLink == 'imagelist-style'){
+                    $handleBase = "__URL__/home?type_link=imagelist-style";
+                }else if($typeLink == 'imagelist-space'){
+                    $handleBase = "__URL__/home?type_link=imagelist-space";
+                }else if($typeLink == 'imagelist-all'){
+                    $handleBase = "__URL__/home?type_link=imagelist-all";
+                }
+
+                $handleShowDetail = $handleBase . "&handle=showDetail";
+                $handleEdit = $handleBase . "&handle=edit";
+                $handleDelete = $handleBase . "&handle=delete";
+                $handleShowHide = $handleBase . "&handle=showHide";
+            ?>
+        <foreach name="list" item="result">
+            <tr>
+                <td>{$result.id}</td>
+                <td>{$result.name}</td>
+                <td>{$result.style_name}</td>
+                <td>{$result.space_name}</td>
+                <td>{$result.hot}</td>
+                <td>{$result.modify_time|date='Y-m-d h:m:s',###}</td>
+                <td>
+                    <a href="<?php echo($handleShowDetail);?>&id={$result.id}">详情</a>
+                    <a href="<?php echo($handleEdit);?>&id={$result.id}">修改</a>
+                    <button type="button" onclick="clickDeleteImage('{$result.id}', '<?=$typeLink?>', '{$result.name}')">删除</button>
+                    <?php
+                        if($result['showHide'] == 1){
+                    ?>
+                        <a href="<?php echo($handleShowHide);?>&id={$result.id}&show=0">隐藏</a>
+                    <?php
+                        }else{
+                    ?>
+                        <a href="<?php echo($handleShowHide);?>&id={$result.id}&show=1">显示</a>
+                    <?php
+                        }
+                    ?>
+                </td>
+            </tr>
+        </foreach>
+    </table>
+</div>
