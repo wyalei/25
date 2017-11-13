@@ -240,6 +240,7 @@ class IndexController extends Controller{
     public function assignStyleSpaceList(){
         $styleDb = M("style");
         $spaceDb = M("space");
+        //ssh test
         $styleList = $styleDb->select();
         $spaceList = $spaceDb->select();
         $this->assign("styleList", $styleList);
