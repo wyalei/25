@@ -14,7 +14,69 @@ class IndexController extends Controller{
         $this->display();
     }
 
+
+    public function checkLogin(){			//后台登录处理方法
+        $_SESSION['MR'] = "mr";
+        $_SESSION['MRKJ'] = "111111";
+        $username=$_POST['text'];		//获取用户名
+        $userpwd=$_POST['pwd'];
+        if($username=="" || $userpwd==""){				//判断用户名和密码是否为空
+            $this->assign('hint','用户名或者密码不能为空');
+            $this->assign('url','__URL__');
+            $this->display('information');				//指定提示信息模板页
+        }else{
+            // if($username!=Session::get(MR)||$userpwd!=Session::get(MRKJ)){	//验证登录用户是否正确
+            if($username!=$_SESSION['MR']||$userpwd!=$_SESSION['MRKJ']){	//验证登录用户是否正确
+                // if($username!="user0"||$userpwd!="111111"){	//验证登录用户是否正确
+                $this->assign('hint','您不是权限用户');
+                $this->assign('url','__URL__/');
+                $this->display('information');
+            }else{
+                $_SESSION['username']=$username;		//将登录用户名赋给SESSION变量
+                $_SESSION['userpwd']=$userpwd;
+                $this->assign('hint','欢迎管理员回归');
+                // $this->assign('url','__URL__/adminIndex');	//设置后台管理主页链接
+                $this->assign('url','home?type_link=imagelist-style&handle=show');	//设置后台管理主页链接
+                $this->display('information');
+            }
+        }
+    }
+
+    public function isLogin(){
+        if(!IndexController::isDataEmpty($_SESSION['username']) and !IndexController::isDataEmpty($_SESSION['userpwd'])
+            and $_SESSION['username']==$_SESSION['MR'] and $_SESSION['userpwd']==$_SESSION['MRKJ']){	//判断用户名和密码是否正确
+            $login=true;
+        }else{
+            $login=false;
+        }
+        return $login;		//返回判断结果
+    }
+
+    public function checkLoginState(){
+        if(!IndexController::isLogin()){	//判断用户名和密码是否正确
+            $this->assign('hint','您不是权限用户');
+            $this->assign('url','login');
+            $this->display('information');
+            $login=false;
+        }else{
+            $login=true;
+        }
+        return $login;		//返回判断结果
+    }
+
+    public function logout(){
+        if($_SESSION['username']==$_SESSION['MR'] and $_SESSION['userpwd']==$_SESSION['MRKJ']){
+            session_destroy();
+            $this->assign('hint','管理员退出');
+            $this->assign('url','login');
+            $this->display('information');
+        }
+    }
+
     public function home(){
+        if(!IndexController::checkLoginState()){
+            return;
+        }
         switch ($_GET['type_link']){
             case 'style':
                 IndexController::handleStyle($_GET['type_link']);
@@ -277,38 +339,8 @@ class IndexController extends Controller{
         $this->display('information');
     }
 
-    public function checkLogin(){			//后台登录处理方法
-        // Load('admin');					//载入配置文件中设置的用户名和密码
-        // session::set("MR", "mr");
-        // session::set("MRKJ", "111111");
-        $_SESSION['MR'] = "mr";
-        $_SESSION['MRKJ'] = "111111";
-        $username=$_POST['text'];		//获取用户名
-        $userpwd=$_POST['pwd'];
-        if($username==""||$userpwd==""){				//判断用户名和密码是否为空
-            $this->assign('hint','用户名或者密码不能为空');
-            $this->assign('url','__URL__');
-            $this->display('information');				//指定提示信息模板页
-        }else{
-            // if($username!=Session::get(MR)||$userpwd!=Session::get(MRKJ)){	//验证登录用户是否正确
-            if($username!=$_SESSION['MR']||$userpwd!=$_SESSION['MRKJ']){	//验证登录用户是否正确
-                // if($username!="user0"||$userpwd!="111111"){	//验证登录用户是否正确
-                $this->assign('hint','您不是权限用户');
-                $this->assign('url','__URL__/');
-                $this->display('information');
-            }else{
-                $_SESSION['username']=$username;		//将登录用户名赋给SESSION变量
-                $_SESSION['userpwd']=$userpwd;
-                $this->assign('hint','欢迎管理员回归');
-                // $this->assign('url','__URL__/adminIndex');	//设置后台管理主页链接
-                $this->assign('url','home');	//设置后台管理主页链接
-                $this->display('information');
-            }
-        }
-    }
 
-
-
+    //------------------------------------------------------------
     public function admin(){			//后台登录处理方法
         // Load('admin');					//载入配置文件中设置的用户名和密码
         // session::set("MR", "mr");
@@ -640,15 +672,7 @@ class IndexController extends Controller{
             }
         }
     }
-    public function logout(){
-        // if($_SESSION['username']==session::get(MR) and $_SESSION['userpwd']==session::get(MRKJ)){
-        if($_SESSION['username']==$_SESSION['MR'] and $_SESSION['userpwd']==$_SESSION('MRKJ')){
-            session_destroy();
-            $this->assign('hint','管理员退出');
-            $this->assign('url','__URL__/');
-            $this->display('information');
-        }
-    }
+
     public function checkEnv(){
         if($_SESSION['username']!=$_SESSION['MR'] and $_SESSION['userpwd']!=$_SESSION('MRKJ')){	//判断用户名和密码是否正确
             $this->assign('hint','您不是权限用户');
