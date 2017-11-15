@@ -49,6 +49,18 @@
                 . "primary key(id)"
                 . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
+            $sql_admin_user = "create table if not exists a_admin_user("
+                . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+                . "name varchar(100) not null unique, "
+                . "pwd varchar(100), "
+                . "level int(1), "
+                . "state int(1), "
+                . "passed int(1), "
+                . "register_time int(4), "
+                . "last_login_time int(1), "
+                . "primary key(id)"
+                . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+
 //    		$sql_elementarytype = "create table if not exists a_elementarytype("
 //    				. "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
 //    				. "middleid int(4), "
@@ -95,7 +107,7 @@
 //            . "primary key(id)"
 //            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
-			$sql_arr = array($sql_style, $sql_space, $sql_image_list);
+			$sql_arr = array($sql_style, $sql_space, $sql_image_list, $sql_admin_user);
 
 			foreach ($sql_arr as $sql) {
 				echo "sql: " . $sql . "<br/>";

@@ -14,6 +14,35 @@ class IndexController extends Controller{
         $this->display();
     }
 
+    public function register(){
+        $this->display();
+    }
+
+
+    public function actionRegister(){
+        $data['name'] = $_GET['name'];
+        $data['pwd'] = md5($_GET['pwd']);
+        $data['level'] = 0;
+        $data['passed'] = 0;
+        $data['register_time'] = NOW;
+        $data['last_login_time'] = NOW;
+
+        $com = M('admin_user');
+        $data = $com->data($data)->add();
+        if($data != false){
+            $this->ajaxReturn(array(
+                'status' => 0,
+                'info' => '注册成功',
+            ));
+        }else{
+            $this->ajaxReturn(array(
+                'status' => 100,
+                'info' => '注册失败',
+            ));
+        }
+
+
+    }
 
     public function checkLogin(){			//后台登录处理方法
         $_SESSION['MR'] = "mr";

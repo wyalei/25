@@ -40,3 +40,7 @@
     width: 185px;
     border-radius: 2px;
 }
+
+.login-container .msg{
+    /*display: none;*/
+}
