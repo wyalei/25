@@ -22,7 +22,7 @@ class IndexController extends Controller{
     public function actionRegister(){
         $data['name'] = $_GET['name'];
         $data['pwd'] = md5($_GET['pwd']);
-        $data['level'] = 1;
+        $data['level'] = 0;
         $data['passed'] = 0;
         $data['register_time'] = NOW;
         $data['last_login_time'] = NOW;
@@ -66,10 +66,15 @@ class IndexController extends Controller{
 
         if($data != false and sizeof($data) == 1){
             if(md5($pwd) == $data[0]['pwd']){
-                $_SESSION['username'] = $username;
-                $_SESSION['level'] = $data[0]['level'];
-                $status = 0;
-                $msg = "登录成功";
+                if($data[0]['passed'] == 1){
+                    $_SESSION['username'] = $username;
+                    $_SESSION['level'] = $data[0]['level'];
+                    $status = 0;
+                    $msg = "登录成功";
+                }else{
+                    $status = 104;
+                    $msg = "账户审核中";
+                }
             }else{
                 $status = 102;
                 $msg = "密码错误";
