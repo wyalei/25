@@ -20,14 +20,22 @@
                     return;
                }
 
-               $.getJSON('__URL__/actionRegister', {name:$username, pwd:$pwd}, function (json) {
-                   $msg = $('#msg');
-//                   if(json.status == 0){
-//
-//                   }else{}
+               if($pwd.length < 6){
                    $msg.slideDown(3000, function () {
                        $msg.css('display', 'block');
-                   }).html(json.info);
+                   }).html("密码长度不能小于6");
+                   return;
+               }
+
+               $.getJSON('__URL__/actionRegister', {name:$username, pwd:$pwd}, function (json) {
+                   $msg = $('#msg');
+                   if(json.status == 0){
+                       $(location).attr("href", "__URL__/login")
+                   }else{
+                       $msg.slideDown(3000, function () {
+                           $msg.css('display', 'block');
+                       }).html(json.msg);
+                   }
                });
            });
         });
@@ -44,6 +52,7 @@
             <input class="pwd" type="password" placeholder="确认密码" name="repwd"/>
             <div class="msg" id="msg"></div>
             <input class="submit" type="button" value="注册">
+            <a href="__URL__/login">去登录</a>
         </div>
 
     </form>

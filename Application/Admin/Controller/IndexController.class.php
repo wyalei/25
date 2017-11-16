@@ -22,26 +22,67 @@ class IndexController extends Controller{
     public function actionRegister(){
         $data['name'] = $_GET['name'];
         $data['pwd'] = md5($_GET['pwd']);
-        $data['level'] = 0;
+        $data['level'] = 1;
         $data['passed'] = 0;
         $data['register_time'] = NOW;
         $data['last_login_time'] = NOW;
 
         $com = M('admin_user');
-        $data = $com->data($data)->add();
-        if($data != false){
+
+        $result = $com->where("name='" . $data['name'] . "'")->select();
+
+        if(sizeof($result) == 1){
+            $status = 101;
+            $msg = '该用户名已经存在';
+
             $this->ajaxReturn(array(
-                'status' => 0,
-                'info' => '注册成功',
+                'status' => $status,
+                'msg' => $msg,
             ));
-        }else{
-            $this->ajaxReturn(array(
-                'status' => 100,
-                'info' => '注册失败',
-            ));
+            return;
         }
 
+        $data = $com->data($data)->add();
+        if($data != false){
+            $status = 0;
+            $msg = '注册成功';
+        }else{
+            $status = 100;
+            $msg = '注册失败';
+        }
 
+        $this->ajaxReturn(array(
+            'status' => $status,
+            'msg' => $msg,
+        ));
+    }
+
+    public function actionLogin(){
+        $username = $_GET['username'];
+        $pwd = $_GET['pwd'];
+
+        $com = M('admin_user');
+        $data = $com->where("name='" . $username . "'")->select();
+
+        if($data != false and sizeof($data) == 1){
+            if(md5($pwd) == $data[0]['pwd']){
+                $_SESSION['username'] = $username;
+                $_SESSION['level'] = $data[0]['level'];
+                $status = 0;
+                $msg = "登录成功";
+            }else{
+                $status = 102;
+                $msg = "密码错误";
+            }
+        }else{
+            $status = 103;
+            $msg = "该用户未注册";
+        }
+
+        $this->ajaxReturn(array(
+            'status' => $status,
+            'msg' => $msg,
+        ));
     }
 
     public function checkLogin(){			//后台登录处理方法
@@ -72,8 +113,7 @@ class IndexController extends Controller{
     }
 
     public function isLogin(){
-        if(!IndexController::isDataEmpty($_SESSION['username']) and !IndexController::isDataEmpty($_SESSION['userpwd'])
-            and $_SESSION['username']==$_SESSION['MR'] and $_SESSION['userpwd']==$_SESSION['MRKJ']){	//判断用户名和密码是否正确
+        if(!IndexController::isDataEmpty($_SESSION['username'])){	//判断用户名和密码是否正确
             $login=true;
         }else{
             $login=false;
@@ -94,12 +134,10 @@ class IndexController extends Controller{
     }
 
     public function logout(){
-        if($_SESSION['username']==$_SESSION['MR'] and $_SESSION['userpwd']==$_SESSION['MRKJ']){
-            session_destroy();
-            $this->assign('hint','管理员退出');
-            $this->assign('url','login');
-            $this->display('information');
-        }
+        session_destroy();
+        $this->assign('hint','管理员退出');
+        $this->assign('url','login');
+        $this->display('information');
     }
 
     public function home(){
@@ -109,22 +147,65 @@ class IndexController extends Controller{
         switch ($_GET['type_link']){
             case 'style':
                 IndexController::handleStyle($_GET['type_link']);
+                $this->display();
                 break;
             case 'space':
                 IndexController::handleStyle($_GET['type_link']);
+                $this->display();
                 break;
             case 'imagelist-style':
                 IndexController::handleImageList($_GET['type_link']);
+                $this->display();
                 break;
             case 'imagelist-space':
                 IndexController::handleImageList($_GET['type_link']);
+                $this->display();
                 break;
             case 'imagelist-all':
                 IndexController::handleImageList($_GET['type_link']);
+                $this->display();
+                break;
+            case 'users-manage':
+                IndexController::handleUsersManage();
+                $this->display();
+                break;
+            case 'register-pass':
+                IndexController::userRegisterPass();
+                $_GET['type_link'] = 'users-manage';
+                $this->home();
+                break;
+            case 'delete-user':
+                IndexController::deleteUser();
+                $_GET['type_link'] = 'users-manage';
+                $this->home();
+                break;
+            default:
+                $this->display();
                 break;
         }
 
-        $this->display();
+
+    }
+
+    public function handleUsersManage(){
+        $com = M('admin_user');
+        $data = $com->select();
+        if($data != false){
+            $this->assign('userArr', $data);
+        }
+    }
+
+    public function userRegisterPass(){
+        $com = M('admin_user');
+        $id = $_GET['id'];
+        $data['passed'] = 1;
+        $com->where('id=' . $id)->save($data);
+    }
+
+    public function deleteUser(){
+        $com = M('admin_user');
+        $id = $_GET['id'];
+        $com->where('id=' . $id)->delete();
     }
 
     public function uploadImageList(){

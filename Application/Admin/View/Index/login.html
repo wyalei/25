@@ -5,16 +5,38 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>登录</title>
     <link rel="stylesheet" type="text/css" href="__ROOT__/Public/Css/login.css">
+    <script type="text/javascript" src="__ROOT__/Public/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('input:button').click(function () {
+                $username = $('input[name="username"]').val();
+                $pwd = $('input[name="pwd"]').val();
+
+                $.getJSON("__URL__/actionLogin", {username:$username, pwd:$pwd}, function (json) {
+                    $msg = $('#msg');
+                    if(json.status == 0){
+                        $(location).attr('href', '__URL__/home');
+                    }else{
+                        $msg.slideDown(3000, function () {
+                            $msg.css('display', 'block');
+                        }).html(json.newpwd + " " + json.oldpwd);
+                    }
+                })
+            });
+        })
+    </script>
 </head>
 <body>
 
 <div class="login-container">
-    <form action="__URL__/checkLogin" method="post">
+    <form action="" method="post">
         <div>
             <h4 class="title">馨家后台管理系统</h4>
-            <input class="username" type="text" placeholder="用户名" name="text"/>
+            <input class="username" type="text" placeholder="用户名" name="username"/>
             <input class="pwd" type="password" placeholder="密码" name="pwd"/>
-            <input class="submit" type="submit" value="登录">
+            <div class="msg" id="msg"></div>
+            <input class="submit" type="button" value="登录">
+            <a href="__URL__/register">去注册</a>
         </div>
 
     </form>

@@ -1,0 +1,38 @@
+<div class="content-type">
+    <p class="title">
+        用户管理
+    </p>
+
+    <?php
+        $type = $_GET['type_link'];
+    ?>
+
+    <table width="400px" border="0" cellspacing="0" cellpadding="0" >
+        <tr>
+            <td>id</td>
+            <td>名字</td>
+            <td>等级</td>
+            <td>状态</td>
+            <td>审核通过</td>
+            <td>注册时间</td>
+            <td>登录时间</td>
+            <td>管理</td>
+        </tr>
+        <foreach name="userArr" item="result">
+            <tr>
+                <td>{$result.id}</td>
+                <td>{$result.name}</td>
+                <td>{$result.level}</td>
+                <td>{$result.state}</td>
+                <td>{$result.passed}</td>
+                <td>{$result.register_time|date='Y-m-d',###}</td>
+                <td>{$result.last_login_time|date='Y-m-d',###}</td>
+                <td>
+                    <input type="submit" name="pass" value="审核通过" onclick="userRegisterPass('{$result.id}', '{$result.name}')">
+                    <input type="submit" name="delete" value="删除" onclick="deleteUser('{$result.id}', '{$result.name}')">
+                </td>
+            </tr>
+        </foreach>
+    </table>
+
+</div>

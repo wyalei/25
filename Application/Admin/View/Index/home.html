@@ -89,6 +89,18 @@
             }
         }
 
+        function userRegisterPass(id, name) {
+            if(confirm("确定要通过 " + name +" 的注册？")){
+                location.href = "__URL__/home?type_link=register-pass&id=" + id;
+            }
+        }
+
+        function deleteUser(id, name) {
+            if(confirm("你确定要删除 " + name +" 吗？")){
+                location.href = "__URL__/home?type_link=delete-user&id=" + id;
+            }
+        }
+
     </script>
 </head>
 <body>
@@ -100,7 +112,7 @@
 
             <ul class="nav-list">
                 <li class="nav-item username">
-                    <a href="#">向大人</a>
+                    <a href="#"><?php echo $_SESSION['username'];?></a>
                 </li>
                 <li class="nav-item home">
                     <a href="#">网站首页</a>
@@ -122,6 +134,15 @@
                 <li class="nav-item setting">
                     <a href="#">设置</a>
                 </li>
+
+                <?php
+                    if($_SESSION['level'] == 0){
+                ?>
+                    <li class="nav-item usersManage">
+                        <a href="__URL__/home?type_link=users-manage">用户管理</a>
+                    </li>
+                <?php } ?>
+
                 <li class="nav-item quit">
                     <a href="__URL__/logout">退出</a>
                 </li>
@@ -165,6 +186,10 @@
             }else if(($_GET['type_link'])=="imagelist-all"){
         ?>
             <include file="contentImageList"/>
+        <?php
+            }else if(($_GET['type_link'])=="users-manage"){
+        ?>
+            <include file="contentUsersManage"/>
         <?php }else{ ?>
         <?php }?>
     </div>
