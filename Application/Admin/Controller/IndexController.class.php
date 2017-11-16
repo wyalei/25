@@ -221,9 +221,9 @@ class IndexController extends Controller{
         $upload->replace = true;
 //        $upload->saveName = array('date', 'y-m-d');
         $info = $upload->upload();
-//        if(!$info){
-//            $this->error($upload->getErrorMsg());
-//        }
+        if(!$info){
+            $this->error($upload->getError());
+        }
 
         return $info;
     }

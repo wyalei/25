@@ -25,7 +25,7 @@
         <?php
             $imageJson = $item['image_list'];
             $imageArr = json_decode($imageJson);
-            $imageUrlBase = "http://localhost/newhome/Uploads/";
+            $imageUrlBase = URL_BASE . "/Uploads/";
         ?>
         <foreach name="imageArr" item="item">
             <img class="image-detail" src="<?php echo($imageUrlBase);?>{$item}"/>

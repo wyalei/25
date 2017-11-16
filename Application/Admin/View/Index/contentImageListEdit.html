@@ -74,7 +74,7 @@
                     <?php
                         $imageJson = $dataItem['image_list'];
                         $imageArr = json_decode($imageJson);
-                        $imageUrlBase = "http://localhost/newhome/Uploads/";
+                        $imageUrlBase = URL_BASE . "/Uploads/";
                         $actionDelete = $formBase . "&action=delete";
                     ?>
                     <input type="hidden" name="deleteImageIndex" id="deleteImageIndex" value=""/>

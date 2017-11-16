@@ -6,7 +6,15 @@ a{
 .login-container{
     border: 1px solid #aaaaaa;
     width: 350px;
-    height: 200px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.register-container{
+    border: 1px solid #aaaaaa;
+    width: 350px;
+    height: 300px;
     margin: 0 auto;
     margin-top: 150px;
 }
@@ -37,15 +45,34 @@ a{
     background-color: #ffffff;
 }
 
+
+.login-container .msg{
+    /*display: none;*/
+    height: 18px;
+    font-size: 14px;
+    color: #e76a55;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
 .login-container .submit{
     margin: 0 auto;
     margin-top: 10px;
     display: block;
     height: 40px;
     width: 185px;
-    border-radius: 2px;
+    border-radius: 1px;
+    font-size: 18px;
+    background-color: #1289d2;
+    color: #ffffff;
 }
 
-.login-container .msg{
-    /*display: none;*/
+.login-container a{
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+    color: #1289d2;
 }
+
+
