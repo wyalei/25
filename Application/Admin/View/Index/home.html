@@ -91,13 +91,13 @@
 
         function userRegisterPass(id, name) {
             if(confirm("确定要通过 " + name +" 的注册？")){
-                location.href = "__URL__/home?type_link=register-pass&id=" + id;
+                location.href = "__URL__/userRegisterPass?id=" + id;
             }
         }
 
         function deleteUser(id, name) {
             if(confirm("你确定要删除 " + name +" 吗？")){
-                location.href = "__URL__/home?type_link=delete-user&id=" + id;
+                location.href = "__URL__/deleteUser?id=" + id;
             }
         }
 
@@ -164,9 +164,6 @@
             </li>
         </ul>
     </div>
-    <?php
-        define("URL_BASE", "http://localhost/25");
-    ?>
 
     <div class="content">
         <?php

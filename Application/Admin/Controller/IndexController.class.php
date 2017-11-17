@@ -24,8 +24,8 @@ class IndexController extends Controller{
         $data['pwd'] = md5($_GET['pwd']);
         $data['level'] = 0;
         $data['passed'] = 0;
-        $data['register_time'] = NOW;
-        $data['last_login_time'] = NOW;
+        $data['register_time'] = NOW_TIME;
+        $data['last_login_time'] = NOW_TIME;
 
         $com = M('admin_user');
 
@@ -90,33 +90,6 @@ class IndexController extends Controller{
         ));
     }
 
-    public function checkLogin(){			//后台登录处理方法
-        $_SESSION['MR'] = "mr";
-        $_SESSION['MRKJ'] = "111111";
-        $username=$_POST['text'];		//获取用户名
-        $userpwd=$_POST['pwd'];
-        if($username=="" || $userpwd==""){				//判断用户名和密码是否为空
-            $this->assign('hint','用户名或者密码不能为空');
-            $this->assign('url','__URL__');
-            $this->display('information');				//指定提示信息模板页
-        }else{
-            // if($username!=Session::get(MR)||$userpwd!=Session::get(MRKJ)){	//验证登录用户是否正确
-            if($username!=$_SESSION['MR']||$userpwd!=$_SESSION['MRKJ']){	//验证登录用户是否正确
-                // if($username!="user0"||$userpwd!="111111"){	//验证登录用户是否正确
-                $this->assign('hint','您不是权限用户');
-                $this->assign('url','__URL__/');
-                $this->display('information');
-            }else{
-                $_SESSION['username']=$username;		//将登录用户名赋给SESSION变量
-                $_SESSION['userpwd']=$userpwd;
-                $this->assign('hint','欢迎管理员回归');
-                // $this->assign('url','__URL__/adminIndex');	//设置后台管理主页链接
-                $this->assign('url','home?type_link=imagelist-style&handle=show');	//设置后台管理主页链接
-                $this->display('information');
-            }
-        }
-    }
-
     public function isLogin(){
         if(!IndexController::isDataEmpty($_SESSION['username'])){	//判断用户名和密码是否正确
             $login=true;
@@ -152,37 +125,21 @@ class IndexController extends Controller{
         switch ($_GET['type_link']){
             case 'style':
                 IndexController::handleStyle($_GET['type_link']);
-                $this->display();
                 break;
             case 'space':
                 IndexController::handleStyle($_GET['type_link']);
-                $this->display();
                 break;
             case 'imagelist-style':
                 IndexController::handleImageList($_GET['type_link']);
-                $this->display();
                 break;
             case 'imagelist-space':
                 IndexController::handleImageList($_GET['type_link']);
-                $this->display();
                 break;
             case 'imagelist-all':
                 IndexController::handleImageList($_GET['type_link']);
-                $this->display();
                 break;
             case 'users-manage':
-                IndexController::handleUsersManage();
-                $this->display();
-                break;
-            case 'register-pass':
-                IndexController::userRegisterPass();
-                $_GET['type_link'] = 'users-manage';
-                $this->home();
-                break;
-            case 'delete-user':
-                IndexController::deleteUser();
-                $_GET['type_link'] = 'users-manage';
-                $this->home();
+                IndexController::showUsersManagePage();
                 break;
             default:
                 $this->display();
@@ -192,12 +149,10 @@ class IndexController extends Controller{
 
     }
 
-    public function handleUsersManage(){
+    public function getAllUsers(){
         $com = M('admin_user');
         $data = $com->select();
-        if($data != false){
-            $this->assign('userArr', $data);
-        }
+        return$data;
     }
 
     public function userRegisterPass(){
@@ -205,12 +160,38 @@ class IndexController extends Controller{
         $id = $_GET['id'];
         $data['passed'] = 1;
         $com->where('id=' . $id)->save($data);
+        IndexController::showUsersManagePage();
     }
 
     public function deleteUser(){
         $com = M('admin_user');
         $id = $_GET['id'];
         $com->where('id=' . $id)->delete();
+        IndexController::showUsersManagePage();
+    }
+
+    public function showUsersManagePage(){
+        $data = IndexController::getAllUsers();
+        if($data != false){
+            $this->assign('userArr', $data);
+        }
+        $_GET['type_link'] = 'users-manage';
+        $this->display("home");
+    }
+
+    //--------------------------
+    public function showImageListData($type, $com){
+        if($type == 'imagelist-style'){
+            $list = $com->where('space_type = -1')->select();
+        }else if($type == 'imagelist-space'){
+            $list = $com->where('space_type <> -1')->select();
+        }else{
+            $list = $com->select();
+        }
+
+        $list = IndexController::addImageStyleSpaceName($list);
+        $this->assign('list', $list);
+        $this->display("home");
     }
 
     public function uploadImageList(){
@@ -251,14 +232,8 @@ class IndexController extends Controller{
                 $pathJson = json_encode($pathArr);
                 $data['image_list'] = $pathJson;
                 $data = $com->data($data)->add();
-                if($data!=false){
-                    IndexController::showImageList($type,"数据添加成功");
-
-                }else{
-                    IndexController::showImageList($type,"添加失败");
-                }
             }
-
+            IndexController::showImageListData($type, $com);
         }else if($_GET['action']=='edit'){
             $id = $_POST['id'];
             $data['name'] = $_POST['name'];
@@ -294,54 +269,35 @@ class IndexController extends Controller{
 
             $data['image_list'] = json_encode($imageResultArr);
             $data = $com->where('id=' . $id)->save($data);
-            if($data!=false){
-                IndexController::showImageList($type,"数据更新成功");
-            }else{
-                IndexController::showImageList($type,"添加失败");
-            }
+            IndexController::showImageListData($type, $com);
         }else if($_GET['handle'] == 'show'){
-            if($type == 'imagelist-style'){
-                $list = $com->where('space_type = -1')->select();
-            }else if($type == 'imagelist-space'){
-                $list = $com->where('space_type <> -1')->select();
-            }else{
-                $list = $com->select();
-            }
-
-            $list = IndexController::addImageStyleSpaceName($list);
-            $this->assign('list', $list);
-
+            IndexController::showImageListData($type, $com);
         }else if($_GET['handle'] == 'showDetail'){
             $id = $_GET['id'];
             $list = $com->where('id=' . $id)->select();
             $list = IndexController::addImageStyleSpaceName($list);
             $this->assign('item', $list[0]);
+            $this->display("home");
         }else if($_GET['handle'] == 'delete'){
             $id = $_GET['id'];
             $result = $com->execute("delete from " . $full_dbname ." where id = " . $id);
-            if($result){
-                IndexController::showStyle($type,"数据删除成功");
-            }else{
-                IndexController::showStyle($type,"数据删除失败");
-            }
+            IndexController::showImageListData($type, $com);
         }else if($_GET['handle'] == 'showHide'){
             $id = $_GET['id'];
             $data['showHide'] = $_GET['show'];
             $data = $com->where('id=' . $id)->save($data);
 
-            if($data!=false){
-                IndexController::showImageList($type,"数据更新成功");
-            }else{
-                IndexController::showImageList($type,"添加失败");
-            }
+            IndexController::showImageListData($type, $com);
         }else if($_GET['handle'] == 'add'){
             IndexController::assignStyleSpaceList();
+            $this->display("home");
         }else if($_GET['handle'] == 'edit'){
             $id = $_GET['id'];
             $list = $com->where('id=' . $id)->select();
             $list = IndexController::addImageStyleSpaceName($list);
             IndexController::assignStyleSpaceList();
             $this->assign('dataItem', $list[0]);
+            $this->display("home");
         }
     }
 
@@ -392,54 +348,42 @@ class IndexController extends Controller{
         return $list;
     }
 
+    public function showStyleSpaceData($com){
+        $list = $com->select();
+        $this->assign('list', $list);
+        $this->display("home");
+    }
+
     public function handleStyle($type){
         $dbname = "style";
         if($type == "space"){
             $dbname = "space";
         }
-        $full_dbname = "a_" . $dbname;
         $com = M($dbname);
         if($_GET['handle']=='add'){
             $data['show_name'] = $_POST['name'];
             $data['show_order'] = $_POST['order'];
             $data['modify_time'] = NOW_TIME;
             $data = $com->data($data)->add();
-            if($data!=false){
-                IndexController::showStyle($type,"数据添加成功");
-
-            }else{
-                IndexController::showStyle($type,"添加失败");
-            }
+            IndexController::showStyleSpaceData($com);
         }else if($_GET['handle'] == 'show'){
-            $list = $com->select();
-            $this->assign('list', $list);
+            IndexController::showStyleSpaceData($com);
         }else if($_GET['handle'] == 'delete'){
             $id = $_GET['id'];
+            $full_dbname = "a_" . $dbname;
             $result = $com->execute("delete from " . $full_dbname ." where id = " . $id);
-            if($result){
-                IndexController::showStyle($type,"数据删除成功");
-            }else{
-                IndexController::showStyle($type,"数据删除失败");
-            }
+            IndexController::showStyleSpaceData($com);
         }else if($_GET['handle'] == 'modify'){
             $id = $_GET['id'];
             $new_name = $_GET['name'];
             $new_order = $_GET['order'];
+            $full_dbname = "a_" . $dbname;
             if(isset($new_name)){
                 $result = $com->execute("update " . $full_dbname. " set show_name='" . $new_name . "' where id=" . $id);
-                if($result){
-                    IndexController::showStyle($type,"数据删除成功");
-                }else{
-                    IndexController::showStyle($type,"更新失败");
-                }
             }else if(isset($new_order)){
                 $result = $com->execute("update " . $full_dbname. " set show_order=" . $new_order . " where id=" . $id);
-                if($result){
-                    IndexController::showStyle($type,"数据删除成功");
-                }else{
-                    IndexController::showStyle($type,"更新失败");
-                }
             }
+            IndexController::showStyleSpaceData($com);
         }
     }
 
@@ -453,6 +397,9 @@ class IndexController extends Controller{
         $this->assign('hint',$msg);
         $this->assign('url','home?type_link=' .$type. '&handle=show');
         $this->display('information');
+//        $_GET['type_link'] = $type;
+//        $_GET['handle'] = 'show';
+//        IndexController::home();
     }
 
 

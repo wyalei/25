@@ -15,7 +15,7 @@
                 $.getJSON("__URL__/actionLogin", {username:$username, pwd:$pwd}, function (json) {
                     $msg = $('#msg');
                     if(json.status == 0){
-                        $(location).attr('href', '__URL__/home');
+                        $(location).attr('href', '__URL__/home?type_link=imagelist-all&handle=show');
                     }else{
                         $msg.slideDown(3000, function () {
                             $msg.css('display', 'block');
