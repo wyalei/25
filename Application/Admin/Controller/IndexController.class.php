@@ -22,7 +22,7 @@ class IndexController extends Controller{
     public function actionRegister(){
         $data['name'] = $_GET['name'];
         $data['pwd'] = md5($_GET['pwd']);
-        $data['level'] = 0;
+        $data['level'] = 1;
         $data['passed'] = 0;
         $data['register_time'] = NOW_TIME;
         $data['last_login_time'] = NOW_TIME;

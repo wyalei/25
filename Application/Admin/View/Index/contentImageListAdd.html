@@ -8,14 +8,16 @@
     </p>
 
     <?php
-                $type = $_GET['type_link'];
-            ?>
+        $type = $_GET['type_link'];
+    ?>
 
     <?php
                 if($_GET['type_link'] == 'imagelist-style'){
                     $formAction = "__URL__/home?type_link=imagelist-style&action=add";
                 }else if($_GET['type_link'] == 'imagelist-space'){
                     $formAction = "__URL__/home?type_link=imagelist-space&action=add";
+                }else{
+                    $formAction = "__URL__/home?type_link=imagelist-all&action=add";
                 }
             ?>
 

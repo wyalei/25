@@ -16,19 +16,15 @@
 <include file="header"/>
 <?php
         define("URL_BASE", "http://localhost/newhome");
+          $imageUrlBase = URL_BASE . "/Uploads/";
 ?>
 <div class="empty-box"></div>
-<section class="" id="section">
-    <section class="gray-bg">
+<div class="" id="section">
+    <div class="gray-bg">
         <div class="banner swiper-container-horizontal" id="banner">
             <ul class="swiper-wrapper">
                 <foreach name="bannerList" item="item">
                     <li class="swiper-slide">
-
-                        <?php
-                            $imageUrlBase = URL_BASE . "/Uploads/";
-                        ?>
-
                         <a href="{$item.link_url}">
                             <img src="<?php echo($imageUrlBase);?>{$item.image_url}">
                         </a>
@@ -83,50 +79,10 @@
                 <a class="btn compute-btn" href="javascripte:;">计算</a>
             </form>
         </div>
-        <div class="home-container">
-            <ul class="baojia-service">
-                <li>
-                    <a href="http://www.fuwo.com/sheji.html">
-                        <img alt="" src="__ROOT__/Public/images/design_ic.png">
-                        <div class="service-info">
-                            <h5>免费设计</h5>
-                            <span>获取专业设计方案</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.fuwo.com/baojia/">
-                        <img alt="" src="__ROOT__/Public/images/offer_ic.png">
-                        <div class="service-info">
-                            <h5>免费报价</h5>
-                            <span>算算装修要花多少钱</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.fuwo.com/server/">
-                        <img alt="" src="__ROOT__/Public/images/guarantee_ic.png">
-                        <div class="service-info">
-                            <h5>装修保障</h5>
-                            <span>省事省心省钱</span>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.fuwo.com/server/#supervisionService">
-                        <img alt="" src="__ROOT__/Public/images/housekeeper_ic.png">
-                        <div class="service-info">
-                            <h5>免费监理</h5>
-                            <span>管家式监理服务</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <div class="white-bg">
+    </div>
+    <div class="design-works-container">
         <div class="find-zhuangxiu-con">
-            <p class="findZX-title">严选优质装修公司</p>
+            <p class="findZX-title">专业设计师免费设计</p>
             <p class="findZX-info">5大标准，层层筛选，五万业主口碑推荐</p>
             <div class="findZX-company">
                 <ul class="company-list">
@@ -230,120 +186,54 @@
             </div>
         </div>
     </div>
-    <section class="grey-bg">
+    <div class="grey-bg">
         <div class="server-step">
             <p class="server-title">服务流程</p>
             <img class="server-step-img" src="__ROOT__/Public/images/server-step.png">
         </div>
-    </section>
-    <section class="image-parent">
-        <div class="view-con">
-            <p class="view-title">海量装修效果</p>
-            <p class="view-info">户型风格自由搭配 90%业主的选择</p>
-            <ul class="view-nav">
-                <li class="view-nav-li">
-                    <a href="http://47.92.133.126/">简欧</a>
-                </li>
-                <li class="view-nav-li">
-                    <a href="http://47.92.133.126/">美式</a>
-                </li>
-                <li class="view-nav-li">
-                    <a href="http://47.92.133.126/">北欧</a>
-                </li>
-                <li class="view-nav-li">
-                    <a href="http://47.92.133.126/">现代</a>
-                </li>
-                <li class="view-nav-li">
-                <li class="view-nav-li view-nav-margin0"><a href="http://www.fuwo.com/">全部美图</a></li>
-                </li>
+    </div>
+    <div class="image-library-container">
+        <p class="view-title">海量装修效果</p>
+        <p class="view-info">户型风格自由搭配 90%业主的选择</p>
+        <ul class="view-nav">
+            <li class="view-nav-li">
+                <a href="http://47.92.133.126/">简欧</a>
+            </li>
+            <li class="view-nav-li">
+                <a href="http://47.92.133.126/">美式</a>
+            </li>
+            <li class="view-nav-li">
+                <a href="http://47.92.133.126/">北欧</a>
+            </li>
+            <li class="view-nav-li">
+                <a href="http://47.92.133.126/">现代</a>
+            </li>
+            <li class="view-nav-li">
+            <li class="view-nav-li view-nav-margin0"><a href="http://www.fuwo.com/">全部美图</a></li>
+            </li>
+        </ul>
+        <div class="view-item">
+            <ul class="view-list">
+
+                <foreach name="imageLibraryList" item="item">
+                    <li class="item">
+                        <a class="hover" href="http://47.92.133.126/" rel="nofollow">
+                            <?php
+                                    $imageJson = $item['image_list'];
+                                    $imageArr = json_decode($imageJson);
+                                    $imageUrl = $imageUrlBase . $imageArr[0];
+                                ?>
+                            <img alt="" class="translate" src="<?php echo($imageUrl);?>">
+                            <div class="design-info">
+                                <p>{$item.name}</p>
+                            </div>
+                        </a>
+                    </li>
+                </foreach>
             </ul>
-            <div class="view-item">
-                <ul class="view-list">
-                    <li class="item">
-                        <a class="hover" href="http://47.92.133.126/" rel="nofollow">
-                            <img class="lazy" data-lazyload="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg"
-                                    src="__ROOT__/Public/images/placeholder.jpg">
-                            <img alt="" class="translate" src="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg">
-                        </a>
-                        <div class="design-info">
-                            <a href="http://47.92.133.126/">别致流金岁月</a>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="hover" href="http://47.92.133.126/" rel="nofollow">
-                            <img class="lazy" data-lazyload="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg"
-                                    src="__ROOT__/Public/images/placeholder.jpg">
-                            <img alt="" class="translate" src="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg">
-                        </a>
-                        <div class="design-info">
-                            <a href="http://47.92.133.126/">别致流金岁月</a>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="hover" href="http://47.92.133.126/" rel="nofollow">
-                            <img class="lazy" data-lazyload="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg"
-                                    src="__ROOT__/Public/images/placeholder.jpg">
-                            <img alt="" class="translate" src="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg">
-                        </a>
-                        <div class="design-info">
-                            <a href="http://47.92.133.126/">别致流金岁月</a>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="hover" href="http://47.92.133.126/" rel="nofollow">
-                            <img class="lazy" data-lazyload="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg"
-                                    src="__ROOT__/Public/images/placeholder.jpg">
-                            <img alt="" class="translate" src="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg">
-                        </a>
-                        <div class="design-info">
-                            <a href="http://47.92.133.126/">别致流金岁月</a>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="hover" href="http://47.92.133.126/" rel="nofollow">
-                            <img class="lazy" data-lazyload="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg"
-                                    src="__ROOT__/Public/images/placeholder.jpg">
-                            <img alt="" class="translate" src="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg">
-                        </a>
-                        <div class="design-info">
-                            <a href="http://47.92.133.126/">别致流金岁月</a>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="hover" href="http://47.92.133.126/" rel="nofollow">
-                            <img class="lazy" data-lazyload="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg"
-                                    src="__ROOT__/Public/images/placeholder.jpg">
-                            <img alt="" class="translate" src="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg">
-                        </a>
-                        <div class="design-info">
-                            <a href="http://47.92.133.126/">别致流金岁月</a>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="hover" href="http://47.92.133.126/" rel="nofollow">
-                            <img class="lazy" data-lazyload="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg"
-                                    src="__ROOT__/Public/images/placeholder.jpg">
-                            <img alt="" class="translate" src="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg">
-                        </a>
-                        <div class="design-info">
-                            <a href="http://47.92.133.126/">别致流金岁月</a>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="hover" href="http://47.92.133.126/" rel="nofollow">
-                            <img class="lazy" data-lazyload="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg"
-                                    src="__ROOT__/Public/images/placeholder.jpg">
-                            <img alt="" class="translate" src="http://img.fuwo.com/ifuwo/1709/14/1a4ea51e993811e7adbf00163e1284d1.jpg@!300x225.jpg">
-                        </a>
-                        <div class="design-info">
-                            <a href="http://47.92.133.126/">别致流金岁月</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
         </div>
-    </section>
-</section>
+    </div>
+</div>
 <include file="footer"/>
 <!--<script data-main="http://static.fuwo.com/fuwo/js/new/pfuwo/newhome.js?v=0063v06"-->
 <!--src="index_files/require.js"></script>-->
