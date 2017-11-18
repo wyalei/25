@@ -57,7 +57,18 @@
                 . "state int(1), "
                 . "passed int(1), "
                 . "register_time int(4), "
-                . "last_login_time int(1), "
+                . "last_login_time int(4), "
+                . "primary key(id)"
+                . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
+
+            $sql_banner = "create table if not exists a_banner("
+                . "id smallint(4) unsigned NOT NULL AUTO_INCREMENT, "
+                . "name varchar(100) not null unique, "
+                . "image_url varchar(100), "
+                . "link_url varchar(100), "
+                . "showHide int(1), "
+                . "state int(1), "
+                . "modify_time int(4), "
                 . "primary key(id)"
                 . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
@@ -107,7 +118,7 @@
 //            . "primary key(id)"
 //            . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 
-			$sql_arr = array($sql_style, $sql_space, $sql_image_list, $sql_admin_user);
+			$sql_arr = array($sql_style, $sql_space, $sql_image_list, $sql_admin_user, $sql_banner);
 
 			foreach ($sql_arr as $sql) {
 				echo "sql: " . $sql . "<br/>";

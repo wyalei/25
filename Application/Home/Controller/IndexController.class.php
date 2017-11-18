@@ -3,7 +3,10 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-        $this->display('index');                        //指定模板页
+        $bannerDb = M('banner');
+        $list = $bannerDb->where('showHide=1')->select();
+        $this->assign("bannerList", $list);
+        $this->display('index');
     }
 }
 ?>

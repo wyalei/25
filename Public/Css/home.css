@@ -86,7 +86,7 @@ ul li{
 
 .left-slide{
     width: 150px;
-    height: 200px;
+    height: 300px;
     /*background-color: #8ab78a;*/
     float: left;
     box-shadow: rgba(0, 0, 0 ,0.4) 0px 2px 4px;
@@ -223,6 +223,11 @@ table tr td{
     text-align: center;
     /*background-color: #8ab78a;*/
 }
+
+/*table img{*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+/*}*/
 
 .content .content-imagelist-style-detail{
     width: 1024px;

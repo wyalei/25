@@ -61,7 +61,13 @@
                 <td>
                     <a href="<?php echo($handleShowDetail);?>&id={$result.id}">详情</a>
                     <a href="<?php echo($handleEdit);?>&id={$result.id}">修改</a>
-                    <button type="button" onclick="clickDeleteImage('{$result.id}', '<?=$typeLink?>', '{$result.name}')">删除</button>
+
+                    <?php
+                        $notice = "你确定要删除 " . $result['name'] . " 吗？";
+                        $href = "__URL__/home?type_link=" . $typeLink . "&handle=delete&id=" . $result['id'];
+                ?>
+
+                    <button type="button" onclick="commonAlert('<?php echo($notice);?>', '<?php echo($href);?>')">删除</button>
                     <?php
                         if($result['showHide'] == 1){
                     ?>

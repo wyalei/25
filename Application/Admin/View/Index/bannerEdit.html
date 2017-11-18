@@ -1,0 +1,19 @@
+<div class="content-imagelist-edit">
+    <p class="title">
+        banner->编辑
+    </p>
+
+    <form action="__URL__/home?type_link=banner&action=edit" method="post" enctype="multipart/form-data">
+        <div>
+            <input type="hidden" name="id" value="{$dataItem.id}"/>
+            <p class="name-container">图片名称:<input type="text" name="name" value="{$dataItem.name}"/></p>
+            <p class="name-container">图片链接:<input type="text" name="link_url" value="{$dataItem.link_url}"/></p>
+            <div class="fileList" id="fileList">
+                <p class="title">添加图片:<input type="file" name="image" id="xdaTanFileImg" onchange="xmTanUploadImg(this)"/></p>
+                <div class="preview-list" id="preview-list"></div>
+            </div>
+
+            <input type="submit" name="submit" class="submit" value="提交"/>
+        </div>
+    </form>
+</div>

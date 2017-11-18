@@ -5,12 +5,6 @@
     <title>馨家后台管理系统</title>
     <link rel="stylesheet" type="text/css" href="__ROOT__/Public/Css/home.css">
     <script language="JavaScript">
-        function deleteStyle(type, id, name) {
-            if(confirm("你确定要删除" + name +"吗？")){
-                location.href = "__URL__/home?type_link=" + type + "&handle=delete&id=" + id;
-            }
-        }
-
         function modifyStyleName(type, id, name) {
             var new_name = prompt("请输入新名字", name);
             if(new_name != name){
@@ -83,21 +77,9 @@
             document.getElementById('uploaded-image-list').removeChild(parent);
         }
 
-        function clickDeleteImage(id, type, name) {
-            if(confirm("你确定要删除 " + name +" 吗？")){
-                location.href = "__URL__/home?type_link=" + type + "&handle=delete&id=" + id;
-            }
-        }
-
-        function userRegisterPass(id, name) {
-            if(confirm("确定要通过 " + name +" 的注册？")){
-                location.href = "__URL__/userRegisterPass?id=" + id;
-            }
-        }
-
-        function deleteUser(id, name) {
-            if(confirm("你确定要删除 " + name +" 吗？")){
-                location.href = "__URL__/deleteUser?id=" + id;
+        function commonAlert(notice, href) {
+            if(confirm(notice)){
+                location.href = href;
             }
         }
 
@@ -151,7 +133,7 @@
     </header>
 
     <div class="left-slide">
-        <div class="type-manage">分类管理</div>
+        <div class="type-manage">图片管理</div>
         <ul class="type-manage-list">
             <li class="style">
                 <a href="__URL__/home?type_link=imagelist-style&handle=show">风格</a>
@@ -163,34 +145,35 @@
                 <a href="__URL__/home?type_link=imagelist-all&handle=show">全部</a>
             </li>
         </ul>
+
+        <div class="type-manage">首页管理</div>
+        <ul class="type-manage-list">
+            <li class="style">
+                <a href="__URL__/home?type_link=banner&handle=show">banner</a>
+            </li>
+        </ul>
     </div>
 
     <div class="content">
         <?php
-            if(($_GET['type_link'])=="style"){
+            $typeLink = $_GET['type_link'];
+            if($typeLink == "style" or $typeLink == "space"){
         ?>
             <include file="contentType"/>
         <?php
-            }else if(($_GET['type_link'])=="space"){
-        ?>
-            <include file="contentType"/>
-        <?php
-            }else if(($_GET['type_link'])=="imagelist-style"){
+            }else if($typeLink == "imagelist-style" or $typeLink == "imagelist-space" or $typeLink == "imagelist-all"){
         ?>
             <include file="contentImageList"/>
         <?php
-            }else if(($_GET['type_link'])=="imagelist-space"){
-        ?>
-            <include file="contentImageList"/>
-        <?php
-            }else if(($_GET['type_link'])=="imagelist-all"){
-        ?>
-            <include file="contentImageList"/>
-        <?php
-            }else if(($_GET['type_link'])=="users-manage"){
+            }else if($typeLink == "users-manage"){
         ?>
             <include file="contentUsersManage"/>
+        <?php
+            }else if($typeLink == "banner"){
+        ?>
+            <include file="banner"/>
         <?php }else{ ?>
+
         <?php }?>
     </div>
 </body>

@@ -141,12 +141,76 @@ class IndexController extends Controller{
             case 'users-manage':
                 IndexController::showUsersManagePage();
                 break;
+            case 'banner':
+                IndexController::manageBanner();
+                break;
             default:
                 $this->display();
                 break;
         }
+    }
 
+    public function manageBanner(){
+        $dbname = "banner";
+        $dbname_full = "a_" . $dbname;
+        $com = M($dbname);
 
+        if($_GET['handle'] == 'show'){
+            IndexController::showBanners($com);
+        }else if($_GET['handle'] == 'add'){
+            $this->display("home");
+        }else if($_GET['handle'] == 'edit'){
+            $id = $_GET['id'];
+            $list = $com->where('id=' . $id)->select();
+            if($list != false && sizeof($list) == 1){
+                $this->assign('dataItem', $list[0]);
+            }
+            $this->display("home");
+        }else if($_GET['handle'] == 'delete'){
+            $id = $_GET['id'];
+            $result = $com->execute("delete from " . $dbname_full ." where id = " . $id);
+            IndexController::showBanners($com);
+        }else if($_GET['handle'] == 'showHide'){
+            $id = $_GET['id'];
+            $data['showHide'] = $_GET['show'];
+            $data = $com->where('id=' . $id)->save($data);
+            IndexController::showBanners($com);
+        }else if($_GET['action'] == 'add'){
+            $info = IndexController::uploadImageList(true);
+            if($info){
+                $data['name'] = $_POST['name'];
+                $data['link_url']= $_POST['link_url'];
+                $data['showHide'] = $_POST['showHide'];
+                $data['modify_time'] = NOW_TIME;
+
+                foreach ($info as $v){
+                    $data['image_url'] = $v['savepath'].$v['savename'];
+                }
+
+                $data = $com->data($data)->add();
+            }
+            IndexController::showBanners($com);
+        }else if($_GET['action'] == 'edit'){
+            $id = $_POST['id'];
+            $data['name'] = $_POST['name'];
+            $data['link_url']= $_POST['link_url'];
+            $data['modify_time'] = NOW_TIME;
+
+            $info = IndexController::uploadImageList(false);
+            foreach ($info as $v){
+                $data['image_url'] = $v['savepath'].$v['savename'];
+            }
+
+            $data = $com->where('id=' . $id)->save($data);
+            IndexController::showBanners($com);
+        }
+    }
+
+    public function showBanners($com){
+        $list = $com->select();
+        $_GET['handle'] = 'show';
+        $this->assign("list", $list);
+        $this->display("home");
     }
 
     public function getAllUsers(){
@@ -194,7 +258,7 @@ class IndexController extends Controller{
         $this->display("home");
     }
 
-    public function uploadImageList(){
+    public function uploadImageList($showError){
         $upload = new \Think\Upload();
         $upload->maxSize = 1024*1024;
         $upload->allowExts = array('jpg','png','jpeg');
@@ -202,7 +266,7 @@ class IndexController extends Controller{
         $upload->replace = true;
 //        $upload->saveName = array('date', 'y-m-d');
         $info = $upload->upload();
-        if(!$info){
+        if($showError and !$info){
             $this->error($upload->getError());
         }
 
@@ -214,7 +278,7 @@ class IndexController extends Controller{
         $full_dbname = "a_" . $dbname;
         $com = M($dbname);
         if($_GET['action']=='add'){
-            $info = IndexController::uploadImageList();
+            $info = IndexController::uploadImageList(true);
             if($info){
                 $data['name'] = $_POST['name'];
                 $data['style_type']= $_POST['style'];
@@ -260,7 +324,7 @@ class IndexController extends Controller{
                 $imageResultArr = $imageArr;
             }
 
-            $info = IndexController::uploadImageList();
+            $info = IndexController::uploadImageList(false);
             if($info){
                 foreach ($info as $v){
                     $imageResultArr[] = $v['savepath'].$v['savename'];

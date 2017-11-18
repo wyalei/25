@@ -28,8 +28,15 @@
                 <td>{$result.register_time|date='Y-m-d',###}</td>
                 <td>{$result.last_login_time|date='Y-m-d',###}</td>
                 <td>
-                    <input type="submit" name="pass" value="审核通过" onclick="userRegisterPass('{$result.id}', '{$result.name}')">
-                    <input type="submit" name="delete" value="删除" onclick="deleteUser('{$result.id}', '{$result.name}')">
+                    <?php
+                        $notice = "确定要通过 " . $result['name'] . " 的注册？";
+                        $href = "__URL__/userRegisterPass?id="  . $result['id'];
+
+                        $noticeDelete = "你确定要删除 " . $result['name'] . " 吗？";
+                        $hrefDelete = "__URL__/deleteUser?id="  . $result['id'];
+                    ?>
+                    <input type="submit" name="pass" value="审核通过" onclick="commonAlert('<?php echo($notice);?>', '<?php echo($href);?>')">
+                    <input type="submit" name="delete" value="删除" onclick="commonAlert('<?php echo($noticeDelete);?>', '<?php echo($hrefDelete);?>')">
                 </td>
             </tr>
         </foreach>

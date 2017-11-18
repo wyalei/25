@@ -1,0 +1,16 @@
+<?php
+        define("URL_BASE", "http://localhost/newhome");
+?>
+<switch name="Think.get.handle">
+    <case value="add">
+        <include file="bannerAdd"/>
+    </case>
+    <case value="showDetail">
+        <include file="bannerDetail"/>
+    </case>
+    <case value="edit">
+        <include file="bannerEdit"/>
+    </case>
+    <default/>
+    <include file="bannerShow"/>
+</switch>

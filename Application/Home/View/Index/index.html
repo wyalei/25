@@ -13,89 +13,46 @@
     <script type="text/javascript" src="__ROOT__/Public/js/banner.js"></script>
 </head>
 <body>
-<header class="header-top-height fixed" id="home-header">
-    <div class="header-nav-fixed">
-        <div class="header-nav-content">
-            <div class="nav-header-logo"><a href="http://47.92.133.126/">
-                <img src="__ROOT__/Public/images/logo.png"></a>
-            </div>
-            <ul class="nav-list">
-                <li class="navitem active"><a href="http://47.92.133.126/">首页</a><span></span></li>
-                <li class="navitem free">
-                    <a href="http://47.92.133.126/">设计与报价<i class="down"></i></a><span></span>
-                    <ul class="sub-nav">
-                        <li><a href="http://47.92.133.126/">免费量房设计</a></li>
-                        <li><a href="http://47.92.133.126/">智能在线报价</a></li>
-                        <li><a href="http://47.92.133.126/">免费验房</a></li>
-                        <li><a href="http://47.92.133.126/">免费监理</a></li>
-                    </ul>
-                </li>
-                <li class="navitem">
-                    <a href="http://47.92.133.126/">装修保障</a><span></span>
-                </li>
-                <li class="navitem"><a href="http://47.92.133.126/">装修公司</a></li><span></span>
-                <li class="navitem"><a href="http://47.92.133.126/">效果图</a></li>
-                <li class="navitem">
-                    <a href="http://47.92.133.126/">装修学堂<i class="down"></i></a><span></span>
-                    <ul class="sub-nav decoration-classroom">
-                        <li><a href="http://47.92.133.126/">装修攻略</a></li>
-                        <li><a href="http://47.92.133.126/">社区</a></li>
-                        <li><a href="http://47.92.133.126/">找小区</a></li>
-                    </ul>
-                </li>
-                <li class="navitem">
-                    <a href="http://47.92.133.126/" target="_blank">下载app</a><span></span>
-                    <ul class="sub-nav rightLing">
-                        <li class="img-con">
-                            <a href="http://47.92.133.126/">
-                                <img alt="" src="__ROOT__/Public/images/header-downlaod.png">
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</header>
+<include file="header"/>
+<?php
+        define("URL_BASE", "http://localhost/newhome");
+?>
 <div class="empty-box"></div>
 <section class="" id="section">
     <section class="gray-bg">
         <div class="banner swiper-container-horizontal" id="banner">
             <ul class="swiper-wrapper">
-                <li class="swiper-slide" data-swiper-slide-index="0">
-                    <a href="http://www.fuwo.com/sheji.html">
-                        <img src="__ROOT__/Public/images/banner1.jpg">
-                    </a>
-                </li>
-                <li class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1">
-                    <a href="http://www.fuwo.com/baojia/">
-                        <img src="__ROOT__/Public/images/banner1.jpg">
-                    </a>
-                </li>
-                <li class="swiper-slide swiper-slide-active" data-swiper-slide-index="2">
-                    <a href="http://www.fuwo.com/server/">
-                        <img src="__ROOT__/Public/images/banner1.png">
-                    </a>
-                </li>
-                <li class="swiper-slide swiper-slide-next" data-swiper-slide-index="3">
-                    <a href="http://3d.fuwo.com/">
-                        <img src="__ROOT__/Public/images/banner1.jpg">
-                    </a>
-                </li>
+                <foreach name="bannerList" item="item">
+                    <li class="swiper-slide">
+
+                        <?php
+                            $imageUrlBase = URL_BASE . "/Uploads/";
+                        ?>
+
+                        <a href="{$item.link_url}">
+                            <img src="<?php echo($imageUrlBase);?>{$item.image_url}">
+                        </a>
+                    </li>
+                </foreach>
             </ul>
-            <!--<button class="banner-ctrl-btn banner-prev">〈</button>-->
-            <!--<button class="banner-ctrl-btn banner-next">〉</button>-->
-            <!--<div class="banner-pagination swiper-pagination-clickable swiper-pagination-bullets">-->
-            <!--<span class="banner-pagination-item"></span>-->
-            <!--<span class="banner-pagination-item"></span>-->
-            <!--<span class="banner-pagination-item active"></span>-->
-            <!--<span class="banner-pagination-item"></span>-->
-            <!--</div>-->
             <ul class="bottom_button">
-                <li class="now"></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <?php
+                    $size = sizeof($bannerList);
+                    if($size != 1){
+
+                    for($i = 0; $i < $size; $i++){
+                        if($i == 0){
+                ?>
+                            <li class="now"></li>
+                <?php
+                        }else{
+                ?>
+                            <li></li>
+                <?php
+                        }
+                    }
+                    }
+                ?>
             </ul>
         </div>
         <div class="compute-price-con">
@@ -387,58 +344,7 @@
         </div>
     </section>
 </section>
-
-<footer>
-    <div class="container-fluid foot-middle">
-        <div class="container">
-            <div class="foot-four foot-middle-left">
-                <h4>爱福窝 让装修变简单</h4>
-                <a href="http://47.92.133.126/" target="_blank">关于我们</a>|
-                <a href="http://47.92.133.126/" target="_blank">媒体报道</a>|
-                <a href="http://47.92.133.126/" target="_blank">商务合作</a>|
-                <a href="http://47.92.133.126/" target="_blank">法律声明</a>|
-                <a href="http://47.92.133.126/" target="_blank">联系我们</a><br>
-                反馈建议：<a href="mailto:wangyalei912@126.com">wangyalei912@126.com</a><br>
-                客服电话：13126562961
-            </div>
-
-            <div class="foot-four foot-middle-middle">
-                <h4>热门标签</h4>
-                <a href="http://47.92.133.126/">客厅背景墙</a>
-                <a href="http://47.92.133.126/">装修设计</a>
-                <a href="http://47.92.133.126/">交换空间</a>
-                <a href="http://47.92.133.126/">小户型装修</a>
-                <a href="http://47.92.133.126/">新房装修</a>
-                <a href="http://47.92.133.126/">家居咨询</a>
-                <a href="http://47.92.133.126/">装修问答</a>
-                <a href="http://47.92.133.126/">装修问答</a>
-            </div>
-
-            <div class="foot-middle-right">
-                <img class="margin-left-4" src="index_files/appdownload.png"><br>
-                扫码下载爱福窝装修app
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid foot-bottom">
-        <div class="container">
-            <div class="link js-footer-link">
-                <em class="link-label">合作网站:</em>
-                <span><a href="http://47.92.133.126/" target="_blank">手机版</a> |&nbsp;</span>
-                <span><a href="http://47.92.133.126/" target="_blank">装修设计</a> |&nbsp;</span>
-                <span><a href="http://47.92.133.126/" target="_blank">土巴兔设计网</a> |&nbsp;</span>
-                <span><a href="http://47.92.133.126/" target="_blank">法律咨询</a> |&nbsp;</span>
-                <span><a href="http://47.92.133.126/" target="_blank">家居市场</a> |&nbsp;</span>
-                <span><a href="http://47.92.133.126/" target="_blank">海鲜市场</a> |&nbsp;</span>
-                <span><a href="http://47.92.133.126/" target="_blank">大排档市场</a> |&nbsp;</span>
-                <span><a href="http://47.92.133.126/" target="_blank">绿色市场</a> |&nbsp;</span>
-                <span><a href="http://47.92.133.126/" target="_blank">秋天颜色</a> |&nbsp;</span>
-                <span><a href="http://47.92.133.126/" target="_blank">缓缓名本</a> |&nbsp;</span>
-            </div>
-        </div>
-    </div>
-</footer>
+<include file="footer"/>
 <!--<script data-main="http://static.fuwo.com/fuwo/js/new/pfuwo/newhome.js?v=0063v06"-->
 <!--src="index_files/require.js"></script>-->
 

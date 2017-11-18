@@ -8,7 +8,7 @@
     </p>
 
     <?php
-        $type = $_GET['type_link'];
+        $typeLink = $_GET['type_link'];
     ?>
 
     <table width="400px" border="0" cellspacing="0" cellpadding="0" >
@@ -27,10 +27,16 @@
                 <td>{$result.show_order}</td>
                 <td>{$result.modify_time|date='Y-m-d',###}</td>
                 <td>
-                    <input type="submit" name="submit" value="名字" onclick="modifyStyleName('<?=$type?>', '{$result.id}', '{$result.show_name}')">
-                    <input type="submit" name="submit" value="优先级" onclick="modifyStyleOrder('<?=$type?>', '{$result.id}', '{$result.show_order}')">
+                    <input type="submit" name="submit" value="名字" onclick="modifyStyleName('<?=$typeLink?>', '{$result.id}', '{$result.show_name}')">
+                    <input type="submit" name="submit" value="优先级" onclick="modifyStyleOrder('<?=$typeLink?>', '{$result.id}', '{$result.show_order}')">
                 </td>
-                <td><input type="submit" name="submit" value="删除" onclick="deleteStyle('<?=$type?>', '{$result.id}', '{$result.show_name}')"></td>
+
+                <?php
+                        $notice = "你确定要删除 " . $result['show_name'] . " 吗？";
+                        $href = "__URL__/home?type_link=" . $typeLink . "&handle=delete&id=" . $result['id'];
+                ?>
+
+                <td><input type="submit" name="submit" value="删除" onclick="commonAlert('<?php echo($notice);?>', '<?php echo($href);?>')"></td>
             </tr>
         </foreach>
     </table>
