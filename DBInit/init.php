@@ -46,6 +46,7 @@
                 . "modify_time int(4), "
                 . "showHide int(1), "
                 . "image_list varchar(1024) NOT NULL,"
+                . "news text, "
                 . "primary key(id)"
                 . ")ENGINE=InnoDB DEFAULT CHARSET=utf8";
 

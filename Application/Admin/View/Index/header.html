@@ -1,0 +1,45 @@
+<header class="header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="#">馨家后台管理系统</a>
+        </div>
+
+        <ul class="nav-list">
+            <li class="nav-item username">
+                <a href="#"><?php echo $_SESSION['username'];?></a>
+            </li>
+            <li class="nav-item home">
+                <a href="#">网站首页</a>
+            </li>
+            <li class="nav-item system-home">
+                <a href="#">系统首页</a>
+            </li>
+            <li class="nav-item category-manage">
+                <a href="#">分类管理</a>
+                <ul class="sub-nav">
+                    <li class="style">
+                        <a href="__URL__/home?type_link=style&handle=show">风格管理</a>
+                    </li>
+                    <li class="space">
+                        <a href="__URL__/home?type_link=space&handle=show">空间管理</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item setting">
+                <a href="#">设置</a>
+            </li>
+
+            <?php
+                    if($_SESSION['level'] == 0){
+                ?>
+            <li class="nav-item usersManage">
+                <a href="__URL__/home?type_link=users-manage">用户管理</a>
+            </li>
+            <?php } ?>
+
+            <li class="nav-item quit">
+                <a href="__URL__/logout">退出</a>
+            </li>
+        </ul>
+    </div>
+</header>

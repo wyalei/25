@@ -18,6 +18,107 @@ class IndexController extends Controller{
         $this->display();
     }
 
+    public function writeImageArticle(){
+        IndexController::assignStyleSpaceList();
+        $this->display();
+    }
+
+    public function addArticle(){
+        $data['name'] = $_POST['name'];
+        $data['style_type']= $_POST['style'];
+        $data['space_type'] = $_POST['space'];
+        $data['hot'] = $_POST['hot'];
+        $data['showHide'] = $_POST['showHide'];
+        $data['modify_time'] = NOW_TIME;
+        $data['news'] = $_POST['articleContent'];
+
+        $pattern = '/<img.*?src="(.*?)".*?>/is';
+//        preg_match($pattern, $data['news'], $match);
+        preg_match_all($pattern, $data['news'], $match);
+        if(sizeof($match) > 1){
+            $pathArr = $match[1];
+            $pathJson = json_encode($pathArr);
+            $data['image_list'] = $pathJson;
+        }
+
+
+        $com = M('image_list');
+        $data = $com->data($data)->add();
+        IndexController::showImageListData("image-list-all", $com);
+    }
+
+    public function save_info(){
+        $CONFIG = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents("./Public/Ueditor/php/config.json")), true);
+        $action = $_GET['action'];
+
+        switch ($action) {
+            case 'config':
+                $result =  json_encode($CONFIG);
+                break;
+
+            /* 上传图片 */
+            case 'uploadimage':
+                /* 上传涂鸦 */
+            case 'uploadscrawl':
+                /* 上传视频 */
+            case 'uploadvideo':
+                /* 上传文件 */
+            case 'uploadfile':
+            $upload = new \Think\Upload();
+            $upload->maxSize = 3145728;
+            $upload->rootPath = './Uploads/';
+            $upload->exts = array('jpg', 'gif', 'png', 'jpeg');
+            $info = $upload->upload();
+            if (!$info) {
+                $result = json_encode(array(
+                    'state' => $upload->getError(),
+                ));
+            } else {
+                $url = __ROOT__ . "/Uploads/" . $info["upfile"]["savepath"] . $info["upfile"]['savename'];
+                $result = json_encode(array(
+                    'url' => $url,
+                    'title' => htmlspecialchars($_POST['pictitle'], ENT_QUOTES),
+                    'original' => $info["upfile"]['name'],
+                    'state' => 'SUCCESS'
+                ));
+            }
+            break;
+
+            /* 列出图片 */
+            case 'listimage':
+                $result = include("action_list.php");
+                break;
+            /* 列出文件 */
+            case 'listfile':
+                $result = include("action_list.php");
+                break;
+
+            /* 抓取远程文件 */
+            case 'catchimage':
+                $result = include("action_crawler.php");
+                break;
+
+            default:
+                $result = json_encode(array(
+                    'state'=> '请求地址出错'
+                ));
+                break;
+        }
+
+        /* 输出结果 */
+        if (isset($_GET["callback"])) {
+            if (preg_match("/^[\w_]+$/", $_GET["callback"])) {
+                echo htmlspecialchars($_GET["callback"]) . '(' . $result . ')';
+            } else {
+                echo json_encode(array(
+                    'state'=> 'callback参数不合法'
+                ));
+            }
+        } else {
+            echo $result;
+        }
+    }
+
 
     public function actionRegister(){
         $data['name'] = $_GET['name'];
@@ -248,6 +349,8 @@ class IndexController extends Controller{
         }else{
             $list = $com->select();
         }
+        $_GET['type_link'] = $type;
+        $_GET['handle'] = 'show';
 
         $list = IndexController::addImageStyleSpaceName($list);
         $this->assign('list', $list);
@@ -336,8 +439,11 @@ class IndexController extends Controller{
             $id = $_GET['id'];
             $list = $com->where('id=' . $id)->select();
             $list = IndexController::addImageStyleSpaceName($list);
-            $this->assign('item', $list[0]);
-            $this->display("home");
+//            $this->assign('item', $list[0]);
+//            $this->display("home");
+
+            $this->assign('article', $list[0]);
+            $this->display("article");
         }else if($_GET['handle'] == 'delete'){
             $id = $_GET['id'];
             $result = $com->execute("delete from " . $full_dbname ." where id = " . $id);
